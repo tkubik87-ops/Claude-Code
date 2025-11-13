@@ -1,0 +1,135 @@
+//═══════════════════════════════════════════════════════════════════════════
+// PHASE 1: DECORATION ALIAS SYSTEM (Source: Kassahi)
+//═══════════════════════════════════════════════════════════════════════════
+// Add these after line 269 in the ALIAS section
+
+// Decoration Aliases - Visual Enhancement
+Alias[GG_BOXES_LEFT]: %DOT-0D%%MAP-21%%BORDER-0A%%RED%•%ORANGE%•%YELLOW%•     %RED%
+Alias[GG_BOXES_RIGHT]: %YELLOW%     •%ORANGE%•%RED%•
+Alias[GG_GG_LEFT]: %DOT-0D%%MAP-21%%BORDER-0A%%PURPLE%•%RED%•%ORANGE%•%YELLOW%•%WHITE%•               %RED%
+Alias[GG_GG_RIGHT]: %WHITE%               •%YELLOW%•%ORANGE%•%RED%•%PURPLE%•
+Alias[GG_RKEY_LEFT]: %DOT-0D%%MAP-21%%BORDER-0A%%RED%•%ORANGE%•%YELLOW%•     %RED%
+Alias[GG_RKEY_RIGHT]: %YELLOW%     •%ORANGE%•%RED%•
+Alias[GG_RTP_LEFT]: %MAP-0A%%RED%•%ORANGE%•%YELLOW%•     %RED%
+Alias[GG_RTP_RIGHT]: %YELLOW%     •%ORANGE%•%RED%•
+Alias[GG_RID_LEFT]: %MAP-0A%%RED%•%ORANGE%•%YELLOW%•          %RED%
+Alias[GG_RID_RIGHT]: %YELLOW%          •%ORANGE%•%RED%•
+
+// Tier Decoration Aliases
+Alias[T0_DECORATION]: %PURPLE%<%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%> %RED%[T0]%PURPLE% <%ORANGE%!%PURPLE%> <%ORANGE%!%PURPLE%>
+Alias[T1_DECORATION]: %ORANGE%<> <> %YELLOW%[T1]%ORANGE% <> <>
+Alias[T2_DECORATION]: %YELLOW%<> %GOLD%[T2]%YELLOW% <>
+Alias[T3_DECORATION]: %TAN%[T3]
+
+// Set and Unique Charm Decorations
+Alias[SET_GG_LEFT]: %GREEN%<%DARK_GREEN%!%GREEN%> <%DARK_GREEN%!%GREEN%>
+Alias[SET_GG_RIGHT]: %GREEN%<%DARK_GREEN%!%GREEN%> <%DARK_GREEN%!%GREEN%>
+Alias[UNICHARM_LEFT]: %GOLD%<%ORANGE%*%GOLD%> <%ORANGE%*%GOLD%> <%ORANGE%*%GOLD%>
+Alias[UNICHARM_RIGHT]: %GOLD%<%ORANGE%*%GOLD%> <%ORANGE%*%GOLD%> <%ORANGE%*%GOLD%>
+
+//═══════════════════════════════════════════════════════════════════════════
+// PHASE 2: ENHANCED MAP IMMUNITIES WITH INFINITY BREAKPOINTS
+//═══════════════════════════════════════════════════════════════════════════
+// These enhanced map displays replace/enhance existing map sections
+// Color codes: FIRE=%RED%, COLD=%BLUE%, LIGHT=%YELLOW%, POISON=%GREEN%, PHYS=%TAN%, MAGIC=%PURPLE%
+
+// T1 Maps - Enhanced with Infinity Breakpoints
+ItemDisplay[t21 NMAG]: %DARK_GREEN%+ %NAME% %DARK_GREEN%[T1]%MAP-80%%CONTINUE%{%RED%(*1 of 2 broken w/ Infinity)%NL%%RED%Fire%RED%*%NL%%GREEN%Poison%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Phlegethon
+ItemDisplay[t12 NMAG]: %DARK_GREEN%+ %NAME% %DARK_GREEN%[T1]%MAP-80%%CONTINUE%{%RED%Fire%NL%%GREEN%Poison%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Horazon's Memory
+ItemDisplay[t22 NMAG]: %DARK_GREEN%+ %NAME% %DARK_GREEN%[T1]%MAP-80%%CONTINUE%{%YELLOW%(*broken w/ Infinity)%NL%%YELLOW%Light%YELLOW%*%NL%%BLUE%Cold%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Torajan Jungle
+ItemDisplay[t13 NMAG]: %DARK_GREEN%+ %NAME% %DARK_GREEN%[T1]%MAP-80%%CONTINUE%{%YELLOW%Light%NL%%TAN%Physical%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Bastion Keep
+ItemDisplay[t23 NMAG]: %DARK_GREEN%+ %NAME% %DARK_GREEN%[T1]%MAP-80%%CONTINUE%{%YELLOW%(*broken w/ Infinity)%NL%%RED%Fire%NL%%YELLOW%Light%YELLOW%*%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Arreat Battlefield
+ItemDisplay[t33 NMAG]: %DARK_GREEN%+ %NAME% %DARK_GREEN%[T1]%MAP-80%%CONTINUE%{%YELLOW%(*broken w/ Infinity)%NL%%BLUE%(*broken w/ Infinity)%NL%%RED%Fire%NL%%YELLOW%Light%YELLOW%*%NL%%BLUE%Cold%BLUE%*%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Lost Temple
+ItemDisplay[t16 NMAG]: %DARK_GREEN%+ %NAME% %DARK_GREEN%[T1]%MAP-80%%CONTINUE%{%BLUE%(*broken w/ Infinity)%NL%%BLUE%Cold%BLUE%*%NL%%GREEN%Poison%NL%%PURPLE%Magic%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Ruined Cistern
+
+// T2 Maps - Enhanced with Infinity Breakpoints
+ItemDisplay[t11 NMAG]: %YELLOW%+ %NAME% %YELLOW%[T2]%MAP-A8%%CONTINUE%{%YELLOW%(*3 of 4 broken w/ Infinity)%NL%%YELLOW%Light%YELLOW%*%NL%%GREEN%Poison%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Ruins of Viz-jun
+ItemDisplay[t14 NMAG]: %YELLOW%+ %NAME% %YELLOW%[T2]%MAP-A8%%CONTINUE%{%RED%Fire%NL%%BLUE%Cold%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Sanatorium
+ItemDisplay[t34 NMAG]: %YELLOW%+ %NAME% %YELLOW%[T2]%MAP-A8%%CONTINUE%{%RED%Fire%NL%%GREEN%Poison%NL%%TAN%Physical%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Ancestral Trial
+ItemDisplay[t15 NMAG]: %YELLOW%+ %NAME% %YELLOW%[T2]%MAP-A8%%CONTINUE%{%YELLOW%(*broken w/ Infinity)%NL%%YELLOW%Light%YELLOW%*%NL%%GREEN%Poison%NL%%PURPLE%Magic%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // The Royal Crypts
+ItemDisplay[t26 NMAG]: %YELLOW%+ %NAME% %YELLOW%[T2]%MAP-A8%%CONTINUE%{%RED%(*broken w/ Infinity)%NL%%RED%Fire%RED%*%NL%%BLUE%Cold%NL%%TAN%Physical%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Shadows of Westmarch
+ItemDisplay[t36 NMAG]: %YELLOW%+ %NAME% %YELLOW%[T2]%MAP-A8%%CONTINUE%{%YELLOW%(*broken w/ Infinity)%NL%%YELLOW%Light%YELLOW%*%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Fall of Caldeum
+
+// T3 Maps - Enhanced with Infinity Breakpoints
+ItemDisplay[t31 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%RED%Fire%NL%%BLUE%Cold%NL%%PURPLE%Magic%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // River of Blood
+ItemDisplay[t32 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%RED%(*1 of 2 broken w/ Infinity)%NL%%RED%Fire%RED%*%NL%%GREEN%Poison%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Throne of Insanity
+ItemDisplay[t24 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%YELLOW%(*1 of 2 broken w/ Infinity)%NL%%YELLOW%Light%YELLOW%*%NL%%BLUE%Cold%NL%%GREEN%Poison%NL%%TAN%Physical%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Tomb of Zoltun Kulle
+ItemDisplay[t25 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%RED%Fire%NL%%YELLOW%Light%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Sewers of Harrogath
+ItemDisplay[t35 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%TAN%None%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Blood Moon
+ItemDisplay[t37 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%RED%Fire%NL%%BLUE%Cold%NL%%TAN%Physical%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Pandemonium Citadel
+ItemDisplay[t38 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%YELLOW%(*1 of 2 broken w/ Infinity)%NL%%YELLOW%Light%YELLOW%*%NL%%GREEN%Poison%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Canyon of Sescheron
+ItemDisplay[t39 NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%BLUE%Cold%NL%%GREEN%Poison%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Kehjistan Marketplace
+ItemDisplay[t3a NMAG]: %RED%+ %NAME% %RED%[T3]%MAP-62%%CONTINUE%{%YELLOW%Light%NL%%GREEN%Poison%NL%%PURPLE%Magic%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open%NL%Requires level 80} // Ashen Plains
+
+//═══════════════════════════════════════════════════════════════════════════
+// PHASE 3: LLD SYSTEM ENHANCEMENTS (Source: eqN-Specialized-LLD.filter)
+//═══════════════════════════════════════════════════════════════════════════
+
+// LLD Charm Reroll Callouts - ALVL 37-38 for Optimal Affixes
+ItemDisplay[cm1 !UNI ILVL=37]: %PURPLE%� %NAME% �%TAN%{%PURPLE%ALVL 37 - Optimal LLD Reroll!%NL%%TAN%3+ affixes possible%NL%%NAME%}%CONTINUE%
+ItemDisplay[cm1 !UNI ILVL=38]: %PURPLE%� %NAME% �%TAN%{%PURPLE%ALVL 38 - Optimal LLD Reroll!%NL%%TAN%3+ affixes possible%NL%%NAME%}%CONTINUE%
+ItemDisplay[cm2 !UNI ILVL=37]: %PURPLE%� %NAME% �%TAN%{%PURPLE%ALVL 37 - Optimal LLD Reroll!%NL%%TAN%3+ affixes possible%NL%%NAME%}%CONTINUE%
+ItemDisplay[cm2 !UNI ILVL=38]: %PURPLE%� %NAME% �%TAN%{%PURPLE%ALVL 38 - Optimal LLD Reroll!%NL%%TAN%3+ affixes possible%NL%%NAME%}%CONTINUE%
+ItemDisplay[cm3 !UNI ILVL=37]: %PURPLE%� %NAME% �%TAN%{%PURPLE%ALVL 37 - Optimal LLD Reroll!%NL%%TAN%3+ affixes possible%NL%%NAME%}%CONTINUE%
+ItemDisplay[cm3 !UNI ILVL=38]: %PURPLE%� %NAME% �%TAN%{%PURPLE%ALVL 38 - Optimal LLD Reroll!%NL%%TAN%3+ affixes possible%NL%%NAME%}%CONTINUE%
+
+// LLD Jewel Information
+ItemDisplay[(wms OR yps OR gps OR ops OR gpm OR opl OR bps OR hfh OR vps) SHOP CLVL>24]: {%LIGHT_GRAY%(Level 30/18/9)%NL%%GRAY%Max Affix Values by LLD Tier:%NL%%WHITE%Level 30: Str 6 | Dex 9 | Life 8 | AR 60 | Res 10%NL%Level 18: Str 4 | Dex 6 | Life 8 | AR 60 | Res 10%NL%Level 9: Str 0 | Dex 3 | Life 8 | AR 40 | Res 0%NL%%YELLOW%Rare LLD Jewels%NL%%TAN%Maximum combined affix values shown above%NL%%DARK_GREEN%LLD Jewel Information%NL%%WHITE%%NAME%}%CONTINUE%
+
+// LLD Dueling Charms (Level 9, 18, 30)
+ItemDisplay[cm1 !UNI (((FRES>4 OR CRES>4 OR LRES>4 OR PRES>4) STR>0) OR (STAT54>0 (STR>0 OR DEX>0))) LVLREQ<10]: %PURPLE%LLD9 %NAME%{%TAN%Level 9 Dueling Usable}%CONTINUE%
+ItemDisplay[cm2 !UNI ((STAT329>1 OR STAT330>1 OR STAT331>1 OR STAT332>1 OR STAT357>1) (DEX>4 OR STR>4 OR FRW>0 OR FHR>0)) LVLREQ<19]: %PURPLE%LLD18 %NAME%{%TAN%Level 18 Dueling Usable}%CONTINUE%
+ItemDisplay[cm2 !UNI LIFE=15 LVLREQ<10]: %PURPLE%LLD9 %NAME%{%TAN%Level 9 Dueling Usable - Perfect Life}%CONTINUE%
+ItemDisplay[cm3 !UNI ((RES>7 OR MAXDMG>3 OR AR>49) (LIFE>14 OR DEX>4 OR STR>4 OR FRW>0 OR FHR>0)) LVLREQ<19]: %PURPLE%LLD18 %NAME%{%TAN%Level 18 Dueling Usable}%CONTINUE%
+ItemDisplay[cm3 !UNI ((FHR>0 OR LIFE>14) (AR>29 OR STAT31>9 OR MANA>13 OR CRES>11 OR FRES>11 OR LRES>11 OR PRES>11 OR RES>4)) LVLREQ<10]: %PURPLE%LLD9 %NAME%{%TAN%Level 9 Dueling Usable}%CONTINUE%
+
+// LLD Level Requirement Callouts
+ItemDisplay[RARE LVLREQ<10 jew]: %PURPLE%LLD9 %YELLOW%%NAME%{%TAN%Level 9 Jewel}%CONTINUE%
+ItemDisplay[RARE LVLREQ<19 LVLREQ>9 jew]: %PURPLE%LLD18 %YELLOW%%NAME%{%TAN%Level 18 Jewel}%CONTINUE%
+ItemDisplay[RARE LVLREQ<31 LVLREQ>18 jew]: %PURPLE%LLD30 %YELLOW%%NAME%{%TAN%Level 30 Jewel}%CONTINUE%
+
+// LLD Dueling Markers for Placeholders
+ItemDisplay[cm1p]: %GRAY%Dueling Charm Placeholder (Small)
+ItemDisplay[cm2p]: %GRAY%Dueling Charm Placeholder (Large)
+ItemDisplay[cm3p]: %GRAY%Dueling Charm Placeholder (Grand)
+
+//═══════════════════════════════════════════════════════════════════════════
+// PHASE 4: EDUCATIONAL TOOLTIPS - CRAFTING MECHANICS
+//═══════════════════════════════════════════════════════════════════════════
+
+// Add educational info to potions or utility items
+ItemDisplay[(wms OR yps OR gps OR ops OR gpm OR opl OR bps) SHOP CLVL>50]: {%ORANGE%══ CRAFTING EDUCATION ══%NL%%WHITE%Crafted ILVL Formula:%NL%%GOLD%  ILVL = (CLVL/2) + (Base ILVL/2)%NL%%WHITE%Affix Level (ALVL) Requirements:%NL%%GOLD%  ALVL 51+ = 3+ affixes possible%NL%  ALVL 71+ = 4 affixes possible%NL%%WHITE%Best Craft Types by Slot:%NL%%RED%Blood:%GRAY% Gloves, Boots, Helms, Belts, Amulets%NL%%BLUE%Caster:%GRAY% Amulets, Rings, Light Gear%NL%%ORANGE%Hitpower:%GRAY% Rings, Heavy Belts, Melee Wpns%NL%%GREEN%Safety:%GRAY% Shields, Armor, Spears%NL%%ORANGE%══════════════════════%NL%%NAME%}%CONTINUE%
+
+//═══════════════════════════════════════════════════════════════════════════
+// PHASE 5: CRAFTING RECOMMENDATIONS (Add to relevant base item sections)
+//═══════════════════════════════════════════════════════════════════════════
+
+// Blood Crafts (ILVL 71+) - Best for: amulets, rings, belts, heavy gloves, light plated boots, helms, plate mail
+// Add {Recommended Blood Craft} tags
+ItemDisplay[NMAG ILVL>70 (hgl OR tgl OR vgl)]: %NAME%{%RED%Recommended Blood Craft%NL%%GRAY%ILVL 71+ Heavy Gloves - Blood Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (lbt OR vbt OR mbt)]: %NAME%{%RED%Recommended Blood Craft%NL%%GRAY%ILVL 71+ Light Plated Boots - Blood Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (fhl OR ghm OR crn OR msk OR bhm)]: %NAME%{%RED%Recommended Blood Craft%NL%%GRAY%ILVL 71+ Helm - Blood Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (plt OR fld OR gth OR ful OR aar)]: %NAME%{%RED%Recommended Blood Craft%NL%%GRAY%ILVL 71+ Plate Armor - Blood Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (hbl OR tbl OR vbl OR mbl)]: %NAME%{%RED%Recommended Blood Craft%NL%%GRAY%ILVL 71+ Belt - Blood Recipe%NL%%NAME%}%CONTINUE%
+
+// Caster Crafts (ILVL 71+) - Best for: amulets, rings, light belts, leather gloves, boots, helms, light plate
+ItemDisplay[NMAG ILVL>70 amu]: %NAME%{%BLUE%Recommended Caster Craft%NL%%GRAY%ILVL 71+ Amulet - Caster Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 rin]: %NAME%{%BLUE%Recommended Caster Craft%NL%%GRAY%ILVL 71+ Ring - Caster Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (lbl OR tbl)]: %NAME%{%BLUE%Recommended Caster Craft%NL%%GRAY%ILVL 71+ Light Belt - Caster Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (lgl OR tgl)]: %NAME%{%BLUE%Recommended Caster Craft%NL%%GRAY%ILVL 71+ Leather Gloves - Caster Recipe%NL%%NAME%}%CONTINUE%
+
+// Hitpower Crafts (ILVL 71+) - Best for: amulets, rings, heavy belts, chain gloves, melee weapons
+ItemDisplay[NMAG ILVL>70 (hbl OR mbl OR vbl)]: %NAME%{%ORANGE%Recommended Hitpower Craft%NL%%GRAY%ILVL 71+ Heavy Belt - Hitpower Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (hgl OR vgl)]: %NAME%{%ORANGE%Recommended Hitpower Craft%NL%%GRAY%ILVL 71+ Chain Gloves - Hitpower Recipe%NL%%NAME%}%CONTINUE%
+
+// Safety Crafts (ILVL 71+) - Best for: amulets, rings, sash belts, gauntlets, breast plate, shields
+ItemDisplay[NMAG ILVL>70 (lbl OR mbl)]: %NAME%{%GREEN%Recommended Safety Craft%NL%%GRAY%ILVL 71+ Sash Belt - Safety Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (hgl OR vgl OR tgl)]: %NAME%{%GREEN%Recommended Safety Craft%NL%%GRAY%ILVL 71+ Gauntlets - Safety Recipe%NL%%NAME%}%CONTINUE%
+ItemDisplay[NMAG ILVL>70 (plt OR fld OR gth)]: %NAME%{%GREEN%Recommended Safety Craft%NL%%GRAY%ILVL 71+ Breast Plate - Safety Recipe%NL%%NAME%}%CONTINUE%
+
+// Low ILVL Warning (<31)
+ItemDisplay[NMAG ILVL<31 (amu OR rin)]: %NAME%{%RED%Not Recommended Craft%NL%%GRAY%ILVL too low (<31) - Poor affix pool%NL%%NAME%}%CONTINUE%
+
+//═══════════════════════════════════════════════════════════════════════════
+// END OF ENHANCEMENT ADDITIONS
+//═══════════════════════════════════════════════════════════════════════════

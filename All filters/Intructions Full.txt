@@ -8,6 +8,51 @@ BASE FILTER
 - Use this file as the already-merged base we’re expanding:  
   `"C:\Users\Kubik\Downloads\filter\All filters\filter for editing my current filter modified\MergedUltimatePD2Filter.filter"`
 
+CHUNKED READING RULE (IMPORTANT)
+
+The tools (Read, Grep, etc.) have size limits. Whenever you work with any
+large .filter or .html file, you MUST read it in multiple chunks instead
+of trying to read the whole file at once.
+
+1) For each big file, first find the total number of lines:
+   Bash
+   wc -l "<path-to-file>"
+
+2) Then scan the file in fixed-size chunks, for example 500 lines at a time.
+   Use Bash + sed or head/tail, e.g.:
+
+   # lines 1–500
+   Bash
+   sed -n '1,500p' "<path-to-file>"
+
+   # lines 501–1000
+   Bash
+   sed -n '501,1000p' "<path-to-file>"
+
+   # lines 1001–1500
+   Bash
+   sed -n '1001,1500p' "<path-to-file>"
+
+   …and so on, increasing the ranges until you reach the total line count.
+   You may also use:
+   Bash
+   tail -n +<start> "<path-to-file>" | head -n 500
+
+3) For EACH chunk, you must scan for:
+   - Aliases
+   - ItemDisplay rules
+   - crafting / economy tags
+   - any unique logic this filter adds
+
+4) Only after you have processed all chunks of a file should you treat that
+   file as “fully read” and use it in the merge. Do NOT rely on a single
+   partial Read when the tool reports a size limit.
+
+If the Read tool itself is used with offset/limit, apply the same idea:
+loop over the file with increasing offsets and fixed limits (for example
+limit = 250000 characters) until you have covered the full file.
+
+
 TASKS
 1) INVENTORY: List every `.filter` file found under the folder (including subfolders of known repos) and group by project (Hiim, Kassahi, eqN, Feather, TalRasha, PD2, DHFilter, Kryszard, etc.). For each, list notable sections (maps, runes, runewords, LLD, shopping/gambling, socket rules, jewels/charms, staffmods, crafting, quest/uber mats).
 2) GAP MAP: For each group, mark which features are **missing** from the base `hiim.filter`.

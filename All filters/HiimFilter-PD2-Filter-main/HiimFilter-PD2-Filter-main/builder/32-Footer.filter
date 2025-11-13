@@ -1,0 +1,54 @@
+
+//-----------------------------------------------------------------------------------
+// ALWAYS SHOW
+//-----------------------------------------------------------------------------------
+ItemDisplay[SHOP !NMAG]: %NAME%%WHITE%{%NAME%}
+ItemDisplay[!SHOP !NMAG]: %NAME%%WHITE%{%NAME%}%CONTINUE%
+ItemDisplay[(cm1 OR cm2 OR cm3 OR jew) ID]: %NAME%{%NAME%}
+ItemDisplay[MAG ID FILTLVL<5]: %DOT-0B%%NAME%%TIER-2%{%NAME%}
+ItemDisplay[RARE ID]: %DOT-0B%%NAME%%TIER-2%{%NAME%}
+ItemDisplay[CRAFT ID]: %DOT-0B%%NAME%%TIER-2%{%NAME%}
+ItemDisplay[RW]: %MAP-68%%NAME%{%NAME%}
+ItemDisplay[UNI ID]: %MAP-68%%NAME%{%NAME%}
+ItemDisplay[SET ID]: %PX-84%%NAME%{%NAME%}
+ItemDisplay[UNI FILTLVL<5]: %MAP-68%%NAME%{%NAME%}
+ItemDisplay[SET FILTLVL<5]: %PX-84%%NAME%{%NAME%}
+ItemDisplay[CRAFT]: %NAME%{%NAME%}
+ItemDisplay[ID (MAG OR RARE OR SET OR UNI OR CRAFT)]: %NAME%{%NAME%}
+//-----------------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------------
+// Filter level Setting limiters
+// ------------------------------------------------------------------------------
+
+// Show high value small items for gold
+ItemDisplay[!SHOP FILTLVL<5 PRICE>34999 (WP12 OR WP4 OR WP13 OR CL6 OR CL5) !(wsp OR 9ws OR 7ws)]: %GREEN%${%GREEN%Sell to Vendor for %GOLD%Gold%CL%%NAME%}
+
+
+//hide most nmag non called out on middle filter levels
+ItemDisplay[!SHOP FILTLVL>1 NMAG !RW WEAPON !ETH]:%NOTIFY-DEAD%{%NAME%}
+ItemDisplay[!SHOP FILTLVL>2 NMAG !RW WEAPON]:%NOTIFY-DEAD%{%NAME%}
+ItemDisplay[!SHOP FILTLVL>1 NMAG !RW ARMOR !(CHEST AND ETH)]:%NOTIFY-DEAD%{%NAME%}
+
+//hide all remaining nmag
+ItemDisplay[!SHOP FILTLVL>4 NMAG !RW (WEAPON OR ARMOR)]:%NOTIFY-DEAD%{%NAME%}
+
+// Hide all remaining magic !eth on semi-strict on hell
+ItemDisplay[!SHOP MAG !ID !ETH FILTLVL>1 DIFF=2]:%NOTIFY-DEAD%{%NAME%}
+
+// Hide all remaining magic on later filter levels
+ItemDisplay[!SHOP MAG !ID FILTLVL>4]:%NOTIFY-DEAD%{%NAME%}
+
+// Hide all items that arent called out in filter on endgame
+ItemDisplay[!SHOP (ARMOR OR WEAPON) !leg DIFF=2 FILTLVL>6]:%NOTIFY-DEAD%{%NAME%}
+//-----------------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------------
+// FILTER STRICTNESS ENFORCEMENT
+//-----------------------------------------------------------------------------------
+ItemDisplay[(FILTLVL>4 OR (FILTLVL>1 AND CLVL>79)) NMAG SOCK=1 !RW (ARMOR OR WEAPON) !ETH]:{%NAME%}
+ItemDisplay[FILTLVL>1 NMAG SOCK=1 !RW WEAPON !ETH !ELT]:{%NAME%}
+ItemDisplay[FILTLVL>4 MAG !ID !(rin OR amu OR cm1 OR cm2 OR cm3)]:{%NAME%}
+ItemDisplay[FILTLVL>4 RARE !ID !(rin OR amu OR cm1 OR cm2 OR cm3)]:{%NAME%}
+//-----------------------------------------------------------------------------------

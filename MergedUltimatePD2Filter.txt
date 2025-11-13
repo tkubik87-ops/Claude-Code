@@ -1,0 +1,209 @@
+// SUPERIOR WEAPONS - Show ED% (Enhanced Display)
+ItemDisplay[SUP WEAPON NMAG !RW ED>14 ETH]: %RED%Sup [%WHITE%%ED%%%RED%ED] %GRAY%%NAME% %GRAY%[ETH]%WHITE% {Craft T1}
+ItemDisplay[SUP WEAPON NMAG !RW ED>14]: %RED%Sup [%WHITE%%ED%%%RED%ED] %GRAY%%NAME%%WHITE% {Craft T1}
+ItemDisplay[SUP WEAPON NMAG !RW ED>9]: %RED%Sup [%WHITE%%ED%%%RED%ED] %GRAY%%NAME%%WHITE% {Keep}
+ItemDisplay[SUP WEAPON NMAG !RW]: %RED%Sup %GRAY%%NAME%%WHITE% {Salvage}
+
+// SUPERIOR ARMORS - Show DEF% (Enhanced Display)
+ItemDisplay[SUP ARMOR NMAG !RW DEF>14 ETH]: %RED%Sup [%WHITE%%DEF%%%RED%DEF] %GRAY%%NAME% %GRAY%[ETH]%WHITE% {Craft T1}
+ItemDisplay[SUP ARMOR NMAG !RW DEF>14]: %RED%Sup [%WHITE%%DEF%%%RED%DEF] %GRAY%%NAME%%WHITE% {Craft T1}
+ItemDisplay[SUP ARMOR NMAG !RW DEF>9]: %RED%Sup [%WHITE%%DEF%%%RED%DEF] %GRAY%%NAME%%WHITE% {Keep}
+ItemDisplay[SUP ARMOR NMAG !RW]: %RED%Sup %GRAY%%NAME%%WHITE% {Salvage}
+
+//═══════════════════════════════════════════════════════════════════════════
+// 12. RUNEWORD BASES - SOCKET COUNTS & TIER NOTES
+//═══════════════════════════════════════════════════════════════════════════
+
+// ELITE POLEARMS - Insight/Infinity/Pride (Merc Weapons)
+ItemDisplay[CL2 (7s8 OR 7pa OR 7h7 OR 7wc) NMAG SOCK=4 ETH !RW]: %ORANGE%*** %NAME% [4OS ETH] ***%MAP-0A%%WHITE% {INSIGHT/INFINITY T1}
+ItemDisplay[CL2 (7s8 OR 7pa OR 7h7 OR 7wc) NMAG SOCK=4 !RW]: %ORANGE%** %NAME% [4OS] **%MAP-62%%WHITE% {INSIGHT T2}
+ItemDisplay[CL2 (7s8 OR 7pa OR 7h7 OR 7wc) NMAG SOCK=0 ETH ILVL>25]: %ORANGE%%NAME% [ETH]%MAP-62%%WHITE% {LARZUK 4OS} {Craft T1}
+
+// ELITE SPEARS - Insight/Infinity
+ItemDisplay[CL2 (7sr OR 7br OR 7tr OR 7st) NMAG SOCK=4 ETH !RW]: %ORANGE%*** %NAME% [4OS ETH] ***%MAP-0A%%WHITE% {INFINITY T1}
+ItemDisplay[CL2 (7sr OR 7br OR 7tr OR 7st) NMAG SOCK=4 !RW]: %ORANGE%** %NAME% [4OS] **%MAP-62%%WHITE% {INSIGHT T2}
+
+// ELITE BOWS - Faith/Brand
+ItemDisplay[CL2 (8s8 OR 8l8 OR 8sb OR 8hb) NMAG SOCK=4 !RW]: %ORANGE%** %NAME% [4OS] **%MAP-62%%WHITE% {FAITH/BRAND} {RW T1}
+
+// ELITE 2H SWORDS - Grief/Breath
+ItemDisplay[CL2 (7gs OR 7b7) NMAG SOCK=6 ETH !RW]: %ORANGE%*** %NAME% [6OS ETH] ***%MAP-0A%%WHITE% {BOTD/BREATH T1}
+ItemDisplay[CL2 (7gs OR 7b7) NMAG SOCK=5 !RW]: %ORANGE%** %NAME% [5OS] **%MAP-62%%WHITE% {GRIEF/DEATH T1}
+
+// ELITE AXES - Grief/Beast/Breath
+ItemDisplay[CL2 (7ba OR 7wa OR 72a OR 7ga OR 7gi) NMAG SOCK=6 ETH !RW]: %ORANGE%*** %NAME% [6OS ETH] ***%MAP-0A%%WHITE% {BOTD/BREATH T1}
+ItemDisplay[CL2 (7ba OR 7wa OR 72a OR 7ga OR 7gi) NMAG SOCK=5 !RW]: %ORANGE%** %NAME% [5OS] **%MAP-62%%WHITE% {GRIEF/BEAST T1}
+
+// ELITE MACES - Grief/Last Wish
+ItemDisplay[CL2 (7mt OR 7m7 OR 7fl) NMAG SOCK=6 ETH !RW]: %ORANGE%*** %NAME% [6OS ETH] ***%MAP-0A%%WHITE% {LAST WISH T1}
+ItemDisplay[CL2 (7mt OR 7m7 OR 7fl) NMAG SOCK=5 !RW]: %ORANGE%** %NAME% [5OS] **%MAP-62%%WHITE% {GRIEF T1}
+
+// ELITE ARMORS - Enigma/Fortitude/Chains of Honor
+ItemDisplay[(utp OR uul OR uar OR uea OR urs OR uld OR uth) NMAG SOCK=4 !RW]: %ORANGE%** %NAME% [4OS] **%MAP-62%%WHITE% {ENIGMA/FORT/COH} {RW Elite T1}
+ItemDisplay[(utp OR uul OR uar OR uea OR urs OR uld OR uth) NMAG SOCK=3 !RW]: %ORANGE%* %NAME% [3OS] *%MAP-62%%WHITE% {ENIGMA/TREACHERY} {RW Elite T2}
+
+// ELITE HELMS - Dream/Delirium
+ItemDisplay[(urn OR baa OR bab OR bac) NMAG SOCK=3 !RW]: %ORANGE%** %NAME% [3OS] **%MAP-62%%WHITE% {DREAM/DELIRIUM} {RW Elite T1}
+
+// ELITE SHIELDS - Spirit/Exile
+ItemDisplay[(uit OR uow) NMAG SOCK=4 RES>34 !RW]: %ORANGE%*** %NAME% [4OS] ***%MAP-0A%%WHITE% [RES:%ORANGE%%ALLRES%%%WHITE%] {EXILE T1}
+ItemDisplay[(uit OR uow) NMAG SOCK=4 !RW]: %ORANGE%** %NAME% [4OS] **%MAP-62%%WHITE% {SPIRIT/EXILE T1}
+
+// WHITE WANDS - White Runeword (Necro)
+ItemDisplay[WP12 NMAG %NECROMANCER_STAFFMODS% SOCK=2]: %WHITE%** %NAME% [2OS] **%MAP-62%%WHITE% {WHITE RW} {RW T2}
+
+//═══════════════════════════════════════════════════════════════════════════
+// 13. UNIQUES - TIERED WITH ECONOMY TAGS
+//═══════════════════════════════════════════════════════════════════════════
+
+// GODLY UNIQUES - Top Tier (5+ HR Value)
+ItemDisplay[UNIQUE (rin OR amu)]: %UNI_GG_ITEM_LEFT% %GOLD%%NAME% %UNI_GG_ITEM_RIGHT%%MAP-0A%%WHITE% {Trade 5+ HR}
+ItemDisplay[UNIQUE (umc OR xuc OR ci3) !ID]: %UNI_GG_ITEM_LEFT% %GOLD%%NAME% %UNI_GG_ITEM_RIGHT%%MAP-0A%%WHITE% {Check Shako/Griffs/+3} {Trade}
+ItemDisplay[UNIQUE (pa7 OR 7gd OR 7wc) !ID]: %UNI_GG_ITEM_LEFT% %GOLD%%NAME% %UNI_GG_ITEM_RIGHT%%MAP-0A%%WHITE% {Check Eth} {Trade}
+
+// HIGH VALUE UNIQUES - Tier 3 (1-5 HR)
+ItemDisplay[UNIQUE (oba OR zhb OR uh9 OR ulm OR uhl OR lbl OR vbl OR zvb OR utc OR uui OR ulg OR utg OR uhg) !ID]: %UNI_TIER3_ITEM_LEFT% %GOLD%%NAME% %UNI_TIER3_ITEM_RIGHT%%MAP-62%%WHITE% {Trade 1-5 HR}
+
+// GOOD UNIQUES - Tier 2 (0.25-1 HR)
+ItemDisplay[UNIQUE (uld OR uar OR uea OR xlb OR zlb OR xhb OR uhb OR utb OR xtb OR 9bl OR 7sc OR 7sb OR 7la OR 7cl OR 7lw OR 7tw) !ID]: %UNI_TIER2_ITEM_LEFT% %GOLD%%NAME% %UNI_TIER2_ITEM_RIGHT%%MAP-62%%WHITE% {Keep}
+
+// USEFUL UNIQUES - Tier 1 (Budget/Utility)
+ItemDisplay[UNIQUE !ID]: %UNI_TIER1_ITEM_LEFT% %GOLD%%NAME% %UNI_TIER1_ITEM_RIGHT%%WHITE% {Keep}
+
+// BUDGET UNIQUES - Tier 0 (Vendor/Salvage)
+ItemDisplay[UNIQUE ID FILTLVL>2]: %UNI_TIER0_ITEM_LEFT% %GOLD%%NAME% %UNI_TIER0_ITEM_RIGHT%%WHITE% {Sell}
+
+//═══════════════════════════════════════════════════════════════════════════
+// 14. SETS - TIERED WITH ECONOMY TAGS
+//═══════════════════════════════════════════════════════════════════════════
+
+// TOP SETS - Tier 3 (High Value Pieces)
+ItemDisplay[SET (amu OR rin OR ci3)]: %SET_GG_ITEM_LEFT% %GREEN%%NAME% %SET_GG_ITEM_RIGHT%%MAP-0A%%WHITE% {Trade}
+ItemDisplay[SET (xuc OR umc) !ID]: %SET_TIER3_ITEM_LEFT% %GREEN%%NAME% %SET_TIER3_ITEM_RIGHT%%MAP-62%%WHITE% {Check Tals/IK} {Keep}
+
+// GOOD SETS - Tier 2 (Useful Pieces)
+ItemDisplay[SET (uld OR uar OR uea OR xlb OR zlb OR xhb) !ID]: %SET_TIER2_ITEM_LEFT% %GREEN%%NAME% %SET_TIER2_ITEM_RIGHT%%MAP-62%%WHITE% {Keep}
+
+// BASIC SETS - Tier 1 (Budget)
+ItemDisplay[SET !ID]: %SET_TIER1_ITEM_LEFT% %GREEN%%NAME% %SET_TIER1_ITEM_RIGHT%%WHITE% {Keep}
+
+// IDENTIFIED SETS - Vendor
+ItemDisplay[SET ID FILTLVL>2]: %GREEN%%NAME%%WHITE% {Sell}
+
+//═══════════════════════════════════════════════════════════════════════════
+// 15. MAGIC/RARE ITEMS - CIRCLETS, RINGS, AMULETS
+//═══════════════════════════════════════════════════════════════════════════
+
+// MAGIC CIRCLETS - Gambling Focus
+ItemDisplay[(ci1 OR ci2 OR ci3) MAG !ID]: %BLUE%[CIRCLET]%MAP-62%%BLUE% %NAME%%WHITE% {Check +2/FCR} {Gamble}
+
+// RARE CIRCLETS - High Value
+ItemDisplay[(ci1 OR ci2 OR ci3) RARE !ID]: %YELLOW%[CIRCLET?]%MAP-62%%YELLOW% %NAME%%WHITE% {Check +2/FCR/IAS/LIFE} {Craft T1}
+
+// MAGIC RINGS - 10FCR Focus
+ItemDisplay[rin MAG !ID]: %BLUE%[RING]%MAP-62%%BLUE% %NAME%%WHITE% {Check 10FCR} {Craft T2}
+
+// RARE RINGS - Crafting
+ItemDisplay[rin RARE !ID]: %YELLOW%[RING?]%MAP-62%%YELLOW% %NAME%%WHITE% {Check 10FCR/LIFE/RES} {Craft T1}
+
+// MAGIC AMULETS - +2 Skills
+ItemDisplay[amu MAG !ID]: %BLUE%[AMU]%MAP-62%%BLUE% %NAME%%WHITE% {Check +2/FCR} {Craft T2}
+
+// RARE AMULETS - Top Tier
+ItemDisplay[amu RARE !ID]: %YELLOW%[AMU?]%MAP-62%%YELLOW% %NAME%%WHITE% {Check +2/FCR/LIFE/RES} {Craft T1}
+
+//═══════════════════════════════════════════════════════════════════════════
+// 16. JEWELS - IAS/ED/RES VALUE CALLOUTS
+//═══════════════════════════════════════════════════════════════════════════
+
+// MAGIC JEWELS - Good Affixes
+ItemDisplay[jew MAG !ID]: %BLUE%[JEWEL]%MAP-62%%BLUE% %NAME%%WHITE% {Check 15IAS/40ED/30RES}
+
+// RARE JEWELS - High Value
+ItemDisplay[jew RARE !ID]: %YELLOW%[JEWEL?]%MAP-62%%YELLOW% %NAME%%WHITE% {Check 15IAS/ED/RES Combo} {Trade}
+
+// UNIQUE JEWELS - Rainbow Facets
+ItemDisplay[jew UNIQUE !ID]: %FACET_ITEM_LEFT% %GOLD%%NAME% %FACET_ITEM_RIGHT%%MAP-0A%%WHITE% {Check Facet} {Trade}
+
+//═══════════════════════════════════════════════════════════════════════════
+// 17. CHARMS - ALL SIZES WITH PROFIT NOTES
+//═══════════════════════════════════════════════════════════════════════════
+
+// SMALL CHARMS - High Value Rolls
+ItemDisplay[cm1 MAG !ID]: %BLUE%[SC]%MAP-62%%BLUE% %NAME%%WHITE% {Check 3/20/20/11RES} {Keep}
+ItemDisplay[cm1 RARE !ID]: %YELLOW%[SC?]%MAP-62%%YELLOW% %NAME%%WHITE% {ID for Trade}
+
+// LARGE CHARMS - Skillers
+ItemDisplay[cm2 MAG !ID]: %BLUE%[LC]%MAP-62%%BLUE% %NAME%%WHITE% {Check +Skills/FHR} {Keep}
+ItemDisplay[cm2 RARE !ID]: %YELLOW%[LC?]%MAP-62%%YELLOW% %NAME%%WHITE% {ID for Trade}
+
+// GRAND CHARMS - Skillers (Top Value)
+ItemDisplay[cm3 MAG !ID]: %BLUE%[GC]%MAP-62%%BLUE% %NAME%%WHITE% {Check +Skiller/Life/FHR} {Trade}
+ItemDisplay[cm3 RARE !ID]: %YELLOW%[GC?]%MAP-62%%YELLOW% %NAME%%WHITE% {ID for Trade}
+
+// UNIQUE CHARMS - Gheed's/Anni/Torch
+ItemDisplay[cm3 UNIQUE !ID]: %RARE_GG_ITEM_LEFT% %GOLD%%NAME% %RARE_GG_ITEM_RIGHT%%MAP-0A%%WHITE% {Check Torch/Anni} {Trade}
+ItemDisplay[cm2 UNIQUE !ID]: %UNI_GG_ITEM_LEFT% %GOLD%%NAME% %UNI_GG_ITEM_RIGHT%%MAP-0A%%WHITE% {Gheed's} {Trade}
+
+//═══════════════════════════════════════════════════════════════════════════
+// 18. POTIONS & CONSUMABLES - SMART HIDING
+//═══════════════════════════════════════════════════════════════════════════
+
+// REJUVENATION POTIONS - Always Show
+ItemDisplay[rvl]: %PURPLE%[FULL REJUV]%WHITE% {Keep}
+ItemDisplay[rvs FILTLVL<7]: %PURPLE%[REJUV]%WHITE% {Keep}
+
+// HEALTH POTIONS - Hide at Higher Levels
+ItemDisplay[(hp1 OR hp2 OR hp3) FILTLVL>3]:
+ItemDisplay[(hp4 OR hp5) FILTLVL>5]:
+ItemDisplay[hp5 FILTLVL<6]: %RED%[HEALTH]%WHITE%
+
+// MANA POTIONS - Hide at Higher Levels
+ItemDisplay[(mp1 OR mp2 OR mp3) FILTLVL>3]:
+ItemDisplay[(mp4 OR mp5) FILTLVL>5]:
+ItemDisplay[mp5 FILTLVL<6]: %BLUE%[MANA]%WHITE%
+
+// ANTIDOTE/THAWING - Hide Early
+ItemDisplay[(yps OR wms) FILTLVL>1]:
+
+//═══════════════════════════════════════════════════════════════════════════
+// 19. QUEST ITEMS & SCROLLS
+//═══════════════════════════════════════════════════════════════════════════
+
+// QUEST ITEMS - Always Show
+ItemDisplay[QUEST]: %ORANGE%*** %NAME% ***%MAP-0A%%WHITE% {Quest Item}
+
+// KEYS - Show in Dungeons
+ItemDisplay[key !TOWN]: %GRAY%[KEY]%WHITE%
+ItemDisplay[key TOWN FILTLVL>5]:
+
+// SCROLLS - Town vs Maps
+ItemDisplay[tsc !TOWN]: %BLUE%[TP SCROLL]%WHITE%
+ItemDisplay[isc !TOWN]: %YELLOW%[ID SCROLL]%WHITE%
+ItemDisplay[(tsc OR isc) TOWN FILTLVL>3]:
+
+// TOMES - Always Show
+ItemDisplay[(tbk OR ibk)]: %NAME%%WHITE%
+
+//═══════════════════════════════════════════════════════════════════════════
+// 20. HIDE RULES & PERFORMANCE - FINAL CLEANUP
+//═══════════════════════════════════════════════════════════════════════════
+
+// Hide Junk Items at Higher Filter Levels
+ItemDisplay[ARMOR NMAG (FILTLVL>2 AND !ETH) CLVL>25]:
+ItemDisplay[WEAPON NMAG (FILTLVL>2 AND !ETH) CLVL>25]:
+ItemDisplay[ARMOR MAG ID FILTLVL>3]:
+ItemDisplay[WEAPON MAG ID FILTLVL>3]:
+
+// Hide Gold Below Threshold at High Levels
+ItemDisplay[GOLD<1000 FILTLVL>7 CLVL>80]:
+ItemDisplay[GOLD<500 FILTLVL>9 CLVL>85]:
+
+// Hide Lower Quality Items in Strict Modes
+ItemDisplay[(hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) FILTLVL>4]:
+ItemDisplay[GEMLEVEL<4 FILTLVL>5]:
+ItemDisplay[(ARMOR OR WEAPON) (NORMAL OR INFERIOR) FILTLVL>6]:
+
+//═══════════════════════════════════════════════════════════════════════════
+// END OF MERGED ULTIMATE PD2 FILTER
+//═══════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,181 @@
+PREPASS — INVENTORY & COMPLETENESS AUDIT
+
+SOURCE FOLDER
+- Treat this as the working directory for all filters:  
+  `C:\Users\Kubik\Downloads\filter\All filters\`
+
+BASE FILTER
+- Use this file as the already-merged base we’re expanding:  
+  `"C:\Users\Kubik\Downloads\filter\All filters\filter for editing my current filter modified\MergedUltimatePD2Filter.filter"`
+
+TASKS
+1) INVENTORY: List every `.filter` file found under the folder (including subfolders of known repos) and group by project (Hiim, Kassahi, eqN, Feather, TalRasha, PD2, DHFilter, Kryszard, etc.). For each, list notable sections (maps, runes, runewords, LLD, shopping/gambling, socket rules, jewels/charms, staffmods, crafting, quest/uber mats).
+2) GAP MAP: For each group, mark which features are **missing** from the base `hiim.filter`.
+3) PLAN: Output a concise merge plan (checklist) with section order. This plan will drive Part 1–4.
+// ADDED:
+4) CRAFTING RECOMMENDATIONS: When scanning each filter, also note any rules, comments, or tags that indicate items are “recommended to craft” or “not recommended to craft” so they can be merged into the base later.
+
+OUTPUT
+- Emit only the audit + plan (≤200 lines). Then stop and print `[[READY_FOR_PART_1]]`.
+
+
+🧱 BASE SETUP
+- Use this file as the **base filter**:  
+  `C:\Users\Kubik\Downloads\filter\All filters\filter for editing my current filter modified\MergedUltimatePD2Filter.filter`
+- All additional filters to pull data and rules are in folders to which dev created the filter and can also be found usually at the top of the .filter file and are stored in:  
+  `C:\Users\Kubik\Downloads\filter\All filters\`
+
+🎯 OBJECTIVE
+Merge all filters in that folder into the base hiim.filter by:
+- Comparing each file and identifying anything **unique or missing** from hiim.filter.
+- Adding all those unique sections, item rules, alias definitions, crafting recommendations, and comments into the base.
+- **Do NOT delete or modify** existing hiim.filter content — only add or enhance.
+
+// ADDED:
+Also incorporate external crafting information from the Project Diablo 2 crafting guide:
+- Use the uploaded file `Crafting - Project Diablo 2.html` (PD2 wiki page) as a reference for crafting recipes, item bases, and whether they are recommended or not recommended to craft.
+- Treat that page as an authoritative source for which bases and crafts should be labeled as {Recommended Craft} or {Not Recommended Craft} in the filter.
+
+🧩 OUTPUT REQUIREMENTS
+- Maintain clear section headers.
+- Preserve PD2 formatting and encoding (no invalid characters).
+- Output the merged result as `Merged_Ultimate.filter`, using Markdown code blocks of ≤100k tokens.
+- At the end of each chunk, add a marker like `[[CONTINUE:n]]` for the next part.
+- Begin by printing a **short Table of Contents** of major sections to be included.
+Then start emitting `Merged_Ultimate.filter (Part 1)` code immediately.
+
+VISUAL & CLASS ENHANCEMENT LAYER
+
+🟡 UNHIDE GOLD
+- Make all gold visible in every context (maps, towns, dungeons, etc.).
+- Use a bright, readable “golden yellow” color for text and a clear pickup sound.
+
+🎨 CLASS THEMES
+- Assign unique color schemes to each class for class-specific gear, crafts, and drops:
+  • Paladin – Holy Light (gold-white)  
+  • Barbarian – Deep Red + Steel Gray  
+  • Sorceress – Arcane Blue  
+  • Amazon – Emerald Green  
+  • Assassin – Shadow Violet  
+  • Necromancer – Bone White / Ivory  
+  • Druid – Forest Green  
+- Apply these consistently to class item bases, skill/staffmod items, and crafting bases.
+
+⚒️ CRAFTING BASES
+- Add top-tier crafting bases per class (armor, weapons, shields, jewels, charms).
+- Show sockets, item level (if possible), runeword eligibility, and quality tier.
+- If not already in hiim.filter, import or define missing base categories.
+
+📦 OUTPUT
+Continue the code output of `Merged_Ultimate.filter` where you left off.
+End each code block with `[[CONTINUE:n]]`.
+
+ECONOMY & CRAFTING INTELLIGENCE LAYER
+
+💰 PROFIT SYSTEM
+- Tag drops by function:
+  `{Sell}` = high vendor value  
+  `{Trade}` = strong market value  
+  `{Keep}` = good for self-use  
+  `{Craft}` = crafting base or recipe target  
+  `{Salvage}` = cube material  
+- Add visible hints next to item names or in comments.
+
+// ADDED – CRAFTING RECOMMENDATIONS FROM FILTERS + WIKI
+- Search all `.filter` files in `C:\Users\Kubik\Downloads\filter\All filters\` for any logic, tags, or comments that indicate:
+  • “recommended to craft”  
+  • “not recommended to craft”  
+  • or similar wording for crafting priorities.
+- Merge these recommendations into `Merged_Ultimate.filter` by:
+  • Adding `{Recommended Craft}` or `{Not Recommended Craft}` style tags near affected items/bases.  
+  • Keeping the original filter’s intent (if a filter says something is bad to craft, preserve that meaning).  
+- Combine that with the recommendations from `Crafting - Project Diablo 2.html`, so the final filter:
+  • Promotes bases and recipes the wiki marks as strong or recommended.  
+  • Still shows, but visually downplays, those that are not recommended.
+
+🧱 CRAFTING PRIORITY COLORS
+- Tier 1 (best) bases = vibrant highlight  
+- Tier 2 = moderate emphasis  
+- Tier 3 = minimal glow but still visible
+- Include notes for common PD2 crafting recipes and rune upgrades.
+
+🎲 SHOPPING & GAMBLING
+- Add reminders for vendor bases (circlets, claws, wands, scepters).
+- Highlight amulets, rings, and circlets that roll well via gambling.
+
+📜 GAMEPLAY TIPS
+- Add short inline notes like “Cube with Perfect Gem”, “Use for Runeword”, or “Upgrade”.
+- Prioritize high-value loot visibility while keeping readability balanced.
+
+📦 OUTPUT
+Continue output of `Merged_Ultimate.filter`, using ≤100k-token chunks.
+End each with `[[CONTINUE:n]]`.
+
+FINAL PASS — QUALITY & PERFORMANCE OPTIMIZATION
+
+🧹 CLEANUP
+- Remove duplicates or conflicting rules created during merging.
+- Keep hiim.filter’s original order and priority when overlap occurs.
+
+⚙️ VALIDATION
+Confirm that:
+✅ Gold is visible everywhere.  
+✅ Class color themes are applied.  
+✅ Crafting bases are clearly marked.  
+✅ `{Sell}/{Keep}/{Trade}/{Craft}/{Salvage}` tags appear where appropriate.  
+✅ No valuable items or drop types are hidden.
+// ADDED:
+✅ Crafting recommendations from all filters and from `Crafting - Project Diablo 2.html` are present and correctly labeled as recommended or not recommended to craft.
+
+🔍 PERFORMANCE
+- Avoid redundant lines and minimize lag by merging similar rules logically.
+- Ensure clear spacing and comments for human readability.
+
+📋 SUMMARY
+At the end, print a short “Summary & Checklist” describing:
+- Which filters contributed content
+- What categories were added
+- What visual and functional upgrades were applied
+- Which crafting recommendations came from which source (filters and the crafting HTML guide, if possible).
+
+📦 OUTPUT
+Emit the remaining code sections of `Merged_Ultimate.filter` until complete, marking the final block as `[[DONE]]`.
+
+COMPLETENESS CHECKLIST — DO NOT SKIP
+Verify all categories are present and visible:
+
+A) GLOBAL
+- Gold always visible (all contexts); stack counts show; pickup sound set
+- Runes: display, tooltips, upgrade/cube notes, socket bonuses
+- Gems/Jewels/Charms: value cues, rolls, crafting notes
+- Sockets: counts on bases, RW eligibility tags
+
+B) CLASSES (Paladin + all others)
+- Class color themes applied (Paladin = Holy Light)
+- Staffmods/skill trees recognized on class bases
+- **Top crafting bases per class** present and tiered (T1/T2/T3) with `{Craft}` or `{RW}` tags
+
+C) ECONOMY
+- `{Sell}/{Keep}/{Trade}/{Craft}/{Salvage}` tags appear where relevant
+- Superior ED/DEF rolls and profitable vendor targets noted
+- Gambling/vendor callouts (rings/amus/circlets; claws/wands/scepters with staffmods)
+
+// ADDED – CRAFTING RECOMMENDATION COVERAGE
+- Check that every recipe/base marked as recommended or not recommended to craft in:
+  • Any `.filter` file in the source folder, and  
+  • `Crafting - Project Diablo 2.html`  
+  is represented in the filter with an appropriate tag or visual treatment.
+
+D) MAPS & BOSSES
+- Map immunities/notes; uber mats; keys; cube mats
+- Town display of stackable quantities
+
+E) LEGACY/EDGE
+- LLD sections; mystery/meme/hyper variants if present
+- Shopping sections; weapon range; naming/formatting modules
+
+If ANY item above is missing, append the required rules at the end in a `// MISSING -> ADDED` section and cross-link in the Table of Contents.
+
+FINAL
+- Print a short table mapping: {source filter} → {sections imported}. End with `[[DONE]]`.
+- Where possible, include which sources contributed crafting recommendations (filters and crafting HTML page).

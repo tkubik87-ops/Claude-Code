@@ -1,0 +1,67 @@
+///// Act 1
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[bks]:%NAME%%CONTINUE%//
+ItemDisplay[bkd]:%NAME%%CONTINUE%//
+ItemDisplay[hdm]:%NAME%%CONTINUE%//
+
+
+///// Act 2
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[tr1]:%NAME%%CONTINUE%//
+ItemDisplay[ass]:%NAME%%CONTINUE%//
+ItemDisplay[box]:%NAME%%CONTINUE%//
+ItemDisplay[msf]:%NAME%%CONTINUE%//
+ItemDisplay[vip]:%NAME%%CONTINUE%//
+ItemDisplay[hst]:%NAME%%CONTINUE%//
+
+
+///// Act 3
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[j34]:%NAME%%CONTINUE%//
+ItemDisplay[g34]:%NAME%%CONTINUE%//
+ItemDisplay[xyz]:%NAME%%CONTINUE%//
+ItemDisplay[g33]:%NAME%%CONTINUE%//
+ItemDisplay[bbb]:%NAME%%CONTINUE%//
+ItemDisplay[qbr]:%NAME%%CONTINUE%//
+ItemDisplay[qey]:%NAME%%CONTINUE%//
+ItemDisplay[qhr]:%NAME%%CONTINUE%//
+ItemDisplay[qf1]:%NAME%%CONTINUE%//
+ItemDisplay[qf2]:%NAME%%CONTINUE%//
+
+
+///// Act 4
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[mss]:%NAME%%CONTINUE%//
+ItemDisplay[hfh]:%NAME%%CONTINUE%//
+
+
+///// Act 5
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[ice]:%NAME%%CONTINUE%//
+ItemDisplay[tr2]:%NAME%%CONTINUE%//
+
+
+///// Cow Level
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[leg]:%GOLD%%NAME%%CONTINUE%//
+
+
+///// Pandemonium
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[pk1]:%RED%ooo %ORANGE%%NAME% %RED%ooo%ORANGE%%CONTINUE%//
+ItemDisplay[pk2]:%RED%ooo %ORANGE%%NAME% %RED%ooo%ORANGE%%CONTINUE%//
+ItemDisplay[pk3]:%RED%ooo %ORANGE%%NAME% %RED%ooo%ORANGE%%CONTINUE%//
+ItemDisplay[dhn]:%RED%oooo %ORANGE%%NAME% %RED%oooo%ORANGE%%CONTINUE%//
+ItemDisplay[bey]:%RED%oooo %ORANGE%%NAME% %RED%oooo%ORANGE%%CONTINUE%//
+ItemDisplay[mbr]:%RED%oooo %ORANGE%%NAME% %RED%oooo%ORANGE%%CONTINUE%//
+ItemDisplay[std]:%RED%ooooo %ORANGE%%NAME% %RED%ooooo%ORANGE%%CONTINUE%//
+
+
+///// Respec 1.13
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[tes]:%RED%oooo %ORANGE%%NAME% %RED%oooo%ORANGE%%CONTINUE%//
+ItemDisplay[ceh]:%RED%oooo %ORANGE%%NAME% %RED%oooo%ORANGE%%CONTINUE%//
+ItemDisplay[bet]:%RED%oooo %ORANGE%%NAME% %RED%oooo%ORANGE%%CONTINUE%//
+ItemDisplay[fed]:%RED%oooo %ORANGE%%NAME% %RED%oooo%ORANGE%%CONTINUE%//
+ItemDisplay[toa]:%RED%ooooo %ORANGE%%NAME% %RED%ooooo%ORANGE%%CONTINUE%//
+

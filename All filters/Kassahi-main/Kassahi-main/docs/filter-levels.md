@@ -1,0 +1,237 @@
+
+# Filter Levels
+
+The Filter Levels Are Used to Determine The Level of Filtering That is Applied to The Loot Filter
+
+-   Recommend starting with one of the Medium Strictness Use This Until u Feel Comfortable Enough or Want a More Strict Lvl, Then u Can Start go Down The Rabbit Hole
+-   Filter Lvl 1-4: Medium Strictness, *all pots & flawless gems, all pots without flawless, all juvs & flawless, big juv without flawless*
+-   Filter Lvl 5-8: Extra Strictness, *all pots & flawless gems, all pots without flawless, big juv without flawless*
+-   Filter Lvl 9-12: Extreme Strictness, *all pots & flawless gems, all pots without flawless, big juv without flawless*
+
+-   Under The Picture u Find More Info on The Filter Lvls
+
+<img width="1358" height="702" alt="image" src="https://github.com/user-attachments/assets/e911b739-2837-4004-9399-831ea053ac64" />
+
+=== "Lvling up Info"
+
+    ## Show/hide:
+    -   Stuff from Medium/Extra/Extreme Strictness are ofc also showen
+    -   Any Gold under 5k is hidden (u auto pickup even hidden gold)
+    -   hp1/mp1 shows in a1 or till clvl 18
+    -   hp2/mp2 shows in a2 or till clvl 25
+    -   hp3/mp3 shows in a3 or till clvl 30
+    -   hp4/mp4 shows in a4 till hell or till clvl 80
+    -   Stam/id scroll shows till clvl 20
+    -   Thaw/tp scroll shows in hell Lod areas or till clvl 90
+    -   Throw pot 1 shows till clvl 5
+    -   Throw pot 2 shows till clvl 15
+    -   Throw pot 3 shows till clvl 30
+    -   Key shows tilll clvl 30 (never on sin)
+    -   Chip/Fla/normal Gem shows till clvl 24
+    -   Any set/uniq has notify till clvl 80
+    -   All char: any magic char item shows in hell Lod areas or till clvl 90
+
+
+
+
+
+    
+=== "Medium Strictness Info"
+
+    ## Shows:
+    -   *35%
+    -   **Filter Lvl 2, 7:** Flawless Gems ''Full'' Name +Notification
+    -   **Filter Lvl 3, 8:** Flawless Gems '' o '' Name
+    -   **Filter Lvl 2, 3, 7, 8:** Flawless Skill ''+ o +'' Name +Notification
+    -   **Filter Lvl 2, 3, 7, 8:** Runes Under 20 +Notification
+    -   **Uniq Tier 1:** Wolfhowl, Stalker's Cull, Kalans Legacy, Blackoak Shield, Wizendraw, Magewrath, Widowmaker, Corpsemourn, Titans Grip, Twilights Reflection, Shatterblade, Guardian Angel, Pus Spitter, Que-Hegans Wisdom, Heavenly Garb, Denmother, Wraithskin, Ebonbane, Peasant Crown, The Patriarch, Silks of the Victor, Leviathan, Plague Bearer, Baezils
+    -   **Uniq Tier 0:** Bloodravens Charge, Ursa's Nightmare, Skullders Ire, Black Hades, Goldwrap, Razortail, Gorefoot, Treads of Cthon, Infernostride, Sandstorm Trek, Shadow Dancer, The Hand of Broc, Frostburn, Venom Grip, Ghoulhide, Hellmouth, Biggins Bonnet, Rockstopper, Radaments Sphere, Rune Master, Kuko Shakaku, Endlesshail, Gull Dagger, Viperfork, Chromatic Ire, Djinn Slayer, Gimmershred, Lacerator, Bartucs Cut-Throat, Duskdeep, Ondals Wisdom, Atmas Wail, Blackbogs Sharp, The Jade Tan Do, Venom Ward, Raekor's Virtue, Purgatory, Valkyrie Wing, Windhammer, Titans Revenge, Stoneraven, Arreats Face, Homunculus, Chance Guards, Crown of Thieves, Witchwild String, Eaglehorn, Wizardspike, The Reapers Toll, Ariocs Needle, Ribcracker, Blade of Ali Baba, Odium, Cloudcrack, Jadetalon, Swordguard
+    -   **Uniq Lld:** Twitchthroe, Rattlecage, Silks of the Victor, The Spirit Shroud, Bloodfist, Peasant Crown, Steelclash, Rakescar, Rogues Bow, Bonesnap, Steeldriver, The Iron Jang Bong, Ripsaw, The Patriarch, Goblin Toe, String of Ears, Quetzalcoatl, Magefist, Rockfleece, True Silver
+    -   **Set Tier 1:** Arcannas Flesh, Natalyas Shadow, Natalyas Totem, Natalyas Mark, Hsaru or Hwanin, Laying of Hands, Najs Puzzler, Aldurs Advance, Aldurs Deception, Immortal Kings Will, Immortal Kings Stone Crusher, Immortal Kings Detail, Immortal Kings Forge, Immortal Kings Pillar, Natalyas Soul, Tal Rashas Lidless Eye, Tal Rashas Horadric Crest, Tal Rashas Fine-Spun Cloth, Trang-Ouls Guise, Immortal Kings Soul Cage, Guillaumes Face, Mavinas True Sight, Mavinas Caster, Mavinas Embrace, Mavinas Icy Clutch, Mavinas Tenet, Tal Rashas Guardianship, Rite of Passage, Haemosus Adament, Aldurs Rhythm, Najs Circlet, Najs Light Plate, Dangoons Teaching
+    -   **Set Lld:** Cow King or Sander, Sanders Superstition, Sanders Taboo, Deaths Hand, Deaths Guard
+    -   **Non Eth Rare:** Bows, Xbows, Arrows, Bolts, Berserker Axe, Feral Axe, Champion Axe, Glorious Axe, Scourge, Legendary Mallet, Ogre Maul, Thunder Maul, Phase Blade, Colossus Sword, Colossus Blade, Flying Axe, Winged Axe, Stygian Pilum, Balrog Spear, Ghost Glaive, Winged Harpoon, Hyperion Spear, War Pike, Thresher, Giant Thresher, Gorgon Crossbow, Suwayyah, War Fist, Scissors Suwayyah, Matriarchal Bow, Grand Matron Bow, Matriarchal Javelin Families
+    -   **Eth Rare:** Any Weapons
+    -   **Mag:** Circlet, Coronet, +Notification
+    -   **Pala:** Rare Normal & Pala Shields +Notification
+    -   **Dru:** Mag & Rare Clubs, Pelts +Notification
+    -   **Bar:** Mag & Rare Bar Helms +Notification
+    -   **Pala:** Mag Pala Shields, Eth Scepters, Rare Pala Shields, Scepters +Notification
+    -   **Necro:** Mag Necro Shields, Eth Wands, Rare Necro Shields, Wands +Notification
+    -   **Sin:** Any Eth Mag Claws, Non Eth Mag Suwayyah, War Fist, Scissors Suwayyah Families, Rare Claws +Notification
+    -   **Sorc:** Mag & Rare Dimensional Shard, Archon Staff Families +Notification
+    -   **Ama:** Mag & Rare Ama Weapons, Rare Arrows, Bolts +Notification
+    -   Class Items Above Shows on All Classes
+    ## Hides:
+    -   **Rare:** Any Other Rare
+    -   **Mag:** Any Other Magic
+    -   **Bases:** Any Other Base
+=== "Extra Strictness Info"
+
+    ## Shows:
+    -   **Filter Lvl 4, 9:** Flawless Gems ''Full'' Name +Notification
+    -   **Filter Lvl 5, 10:** Flawless Gems '' o '' Name
+    -   **Filter Lvl 4, 5, 6, 9, 10, 11:** Flawless Skill ''+ o +'' Name +Notification
+    -   **Filter Lvl 4, 5, 9, 10:** Runes Under 20, +Notification
+    -   **Filter Lvl 6, 11:** Runes Under 20, Runes 3, 5, 8, 9, 11, 12, +Notification
+    -   **Set Tier 2:** Cow Kings Horns, Cow Kings Hide, Taebaeks Glory, Griswolds Heart, Griswolds Valor, Aldurs Stony Gaze, Set Amulet
+    -   **Non Eth Rare:** Arrows, Bolts, Berserker Axe, Feral Axe, Champion Axe, Glorious Axe, Scourge, Legendary Mallet, Ogre Maul, Thunder Maul, Phase Blade, Colossus Sword, Colossus Blade, Flying Axe, Winged Axe, Stygian Pilum, Balrog Spear, Ghost Glaive, Winged Harpoon, Hyperion Spear, War Pike, Thresher, Giant Thresher, Gorgon Crossbow, Suwayyah, War Fist, Scissors Suwayyah, Matriarchal Bow, Grand Matron Bow, Matriarchal Javelin Families
+    -   **Rare:** Helms, Shields, Chests, Belts, (Circlets +Notification)
+    -   **Non Eth Mag:** Matriarchal Bow, Grand Matron Bow Families, Maiden Javelin, Charms, Jewels +Notification
+    -   **Eth Mag:** Helmets, Gloves, Berserker Axe, Feral Axe, Champion Axe, Glorious Axe, Scourge, Legendary Mallet, Ogre Maul, Thunder Maul, Phase Blade, Colossus Sword, Colossus Blade, Flying Axe, Winged Axe, Stygian Pilum, Balrog Spear, Ghost Glaive, Winged Harpoon, Hyperion Spear, War Pike, Thresher, Giant Thresher, Suwayyah, War Fist, Scissors Suwayyah, Matriarchal Javelin Families +Notification
+    -   **Mag:** Tiara, Diadem +Notification
+    -   **Pala:** Rare Normal & Pala Shields +Notification
+    -   **Imbue Bases:** Diadem
+    -   **Helmet Bases:** Non Eth 0os, 3os, 10+Ed, Demonhead, Bone Visage, Winged Helm, Diadem
+    -   Eth 0os, 3os, Demonhead, Bone Visage, Diadem, Spired Helm, Corona
+    -   **Chest Bases:** Non Eth 0os, 3os, 4os, 10+Ed, Ancient Armor, Mage Plate, Elite Chests
+    -   Eth 0os, 2os, 3os, 4os, Ancient Armor, Mage Plate, Elite Chests
+    -   **Shield Bases:** Non Eth 0os, 4os, 10+Ed, Monarch, Aegis, Ward
+    -   Eth 0os, 4os, Monarch, Aegis, Ward
+    -   **1 Handed Axe Bases:** Non Eth 0os, 2os, 5os, 6os, 10+Ed, Ettin Axe, Berserker Axe
+    -   Non Eth 0os, 5os, 10+Ed, War Spike
+    -   Eth 0os, 3os, 5os, 6os, Ettin Axe, Berserker Axe
+    -   **2 Handed Axe Bases:** Non Eth 0os, 6os, 10+Ed, Decapitator, Champion Axe, Glorious Axe
+    -   Eth 0os, 4os, 5os, 6os, Decapitator, Champion Axe, Glorious Axe
+    -   **1 Handed Hammer Bases:** Non Eth 0os, 2os, 3os, 10+Ed, Legendary Mallet
+    -   Eth 0os, 3os, Legendary Mallet
+    -   **2 Handed Hammer Bases:** Non Eth 0os, 5os, 6os, 10+Ed, Ogre Maul, Thunder Maul
+    -   Eth 0os, 5os, 6os, Ogre Maul, Thunder Maul
+    -   **1 Handed Sword Bases:** Non Eth 0os, 4os, 5os, 6os, 10+Ed, Phase Blade
+    -   Eth 0os, 4os, 5os, Cryptic Sword
+    -   **2 Handed Sword Bases:** Non Eth 0os, 2os, 5os, 6os, 10+Ed, Balrog Blade, Colossus Sword, Colossus Blade
+    -   Eth 0os, 3os, 4os, 5os, 6os, Balrog Blade, Colossus Sword, Colossus Blade
+    -   Eth 0os, 5os, Zweihander
+    -   **Dagger Bases:** Non Eth 0os, 2os, 3os, 10+Ed, Bone Knife, Fanged Knife (w/ Either +3 Poison Strike +3 Tiger Strike +3 Blade Sentinel +3 Fists of Fire +3 Cobra Strike +3 Blade Fury +3 Claws of Thunder +3 Blades of Ice +3 Phoenix Strike)
+    -   **Spear/Polearm/Ama Spear Bases:** Eth 0os, 4os, 5os, 6os, Stygian Pike, Mancatcher, Ghost Spear, War Pike, Ogre Axe, Thresher, Cryptic Axe, Great Poleaxe, Giant Thresher
+    -   Non Eth 0os, 4os, 5os, 10+Ed, +3Jav, Matriarchal Spear, Matriarchal Pike
+    -   **Purity Bases:** Non Eth 3os, Hell Difficulty, Elite Spear, Elite polearm
+    -   **Insight Bases:** Non Eth 4os, Hell Difficulty, Elite Spear, Elite polearm
+    -   **Bow/Xbow/Ama Bow Bases:** Non Eth 0os, 4os, 5os, 6os, 10+Ed, Gorgon Crossbow, Colossus Crossbow, Demon Crossbow
+    -   Non Eth 0os, 4os, 5os, 6os, 10+Ed, +3Bow, Matriarchal Bow, Grand Matron Bow
+    -   **Staff Bases:** Eth 0os, 2os, 4os, 5os, 6os, Stalagmite, Archon Staff
+    -   **Scepter Bases:** Non Eth 0os, 2os, 10+Ed, Seraph Rod, Caduceus
+    -   **Claw Bases:** Eth 0os, 3os, Suwayyah, War Fist, Scissors Suwayyah
+    ## Hides:
+    -   **Filter Lvl 6, 11:** Flawless Gems
+    -   **Uniq:** lld, T0, T1, +Non Highlighted
+    -   **Set:** lld, T1, +Non Highlighted
+    -   **Rare:** Any Other Rare
+    -   **Mag:** Any Other Magic
+    -   **Bases:** Any Other Base
+=== "Extreme Strictness Info"
+
+    ## Shows:
+    -   **Filter Lvl 12:** Flawless Skill ''+ o +'' Name
+    -   **Filter Lvl 12:** Runes Under 20 '' Number '' Name Except 3, 5, 8, 9, 11, 12
+    -   Pvp Ear, Quest Items, Perfect Gems, Runes, Essences, token, Uber/Boss mats, PD2 Items, Maps
+    -   **Uniqs:** Anni, Torch, Gheed
+    -   **Uniq Boss Items:** The Third Eye, Cage of the Unsullied, Band of Skulls, Aidans Scar, Cage of the Unsullied, Dark Abyss, Band of Skulls, Itheraels Path, Overlords Helm, Hadriels Hand
+    -   **Uniq GG:** Griffons Eye, Herald of Zakarum, Eschutas Temper, Deaths Fathom, Templars Might or Tyraels Might, Arachnid Mesh, Shako, Steel Shade, Veil of Steel or Nightwings Veil, Andariels Visage, Crown of Ages, Stormshield, Medusas Gaze, Spirit Ward, Death Cleaver, Stone Crusher or Schaefers Hammer, Earth Shifter or The Cranium Basher, Astreons Iron Ward, Steel Pillar, Brimstone Rain, Mang Songs Lesson, Deaths Web, Boneflame, Skull Collector, Gore Rider, The Grandfather
+    -   **Uniq Tier 3:** Kiras Guardian, Thunderstroke, Cyclopean Roar, Demonhorns Edge, Halaberds Reign, Jalals Mane, Spirit Keeper, Darkforce, Shaftstop, The Gladiators Bane, Ormus Robes, Arkaines Valor, Steel Carapace, String of Ears, Nosferatus Coil, Verdungos Hearty Cord, Hotspur, Soul Drainer, Occultist, Steelrend, Giant Skull, Lidless Wall, Warlords Trust, The Gavel Of Pain, Horizons Tornado or Stormlash, Stormspire, Tomb Reaver, Flamebellow, Arm of King Leoric, Blackhand Key, Windforce, War Traveler, Snowclash, Dragonscale, The Spirit Shroud, Hellslayer, Lightsabre or Azurewrath, Frostwind, Alma Negra, Lava Gout, Draculs Grasp, Martyrdom, Amulet, Ring
+    -   **Uniq Tier 2:** Cerebus Bite, Ravenlore, The Oculus, Skin of the Vipermagi, Thundergods Vigor, Waterwalk, Silkweave, Magefist, Gravepalm, Gerkes Sanctuary, Head Hunters Glory, Ghostflame, Grims Burning Dead Grim, Doombringer, Suicide Branch, Boneshade Lich, Toothrow, Merman's Spocket, Vampire Gaze, Marrowwalk, Buriza-Do Kyanon
+    -   **Set GG:** Tancreds Hobnails, Only Eth Immortal Kings Stone Crusher, Bul-Kathos Sacred Charge, Bul-Kathos Tribal Guardian
+    -   **Set Tier 3:** Trang-Ouls Wing, Trang-Ouls Girth, Trang-Ouls Claws, Ondals Almighty, Trang-Ouls Scales, Griswolds Redemption, Griswolds Honor, Deaths Hand, Ring
+    -   **Uniq Warrior Map:** Mag Amulet, Armors, Weapons, Rare Amulet, Ring, Armors, Weapons, Arrows, Bolts
+    -   **Ama:** Mag & Rare Matriarchal Bow, Grand Matron Bow Families, Maiden Javelin, Rare Gorgon Crossbow Family, Arrows, Bolts
+    -   **Bar:** Eth Mag Barb Helms, Flying Axe, Balrog Spear Families, Rare Barb Helms
+    -   **Dru:** Eth Mag Feral Axe, Champion Axe, Thresher, Giant Thresher Families
+    -   **Pala:** Eth Mag Scourge Family
+    -   **Sin:** Eth Mag War Fist Family
+    -   **Eth Rare:** Chests, Belts, Gloves, Boots, Berserker Axe, Feral Axe, Champion Axe, Glorious Axe, Scourge, Legendary Mallet, Ogre Maul, Thunder Maul, Phase Blade, Colossus Sword, Colossus Blade, Flying Axe, Winged Axe, Stygian Pilum, Balrog Spear, Ghost Glaive, Winged Harpoon, Hyperion Spear, War Pike, Thresher, Giant Thresher, Any claw, Matriarchal Javelin Families
+    -   **Non Eth Rare:** Necro Shields, Dru Pelts, Colossus Crossbow Family, Jewels, Amulets, Rings, Glvoes, Boots
+    -   **Both Rare:** Circlets
+    -   **Non Eth Mag:** Jewels, Charms
+    -   **Ferocity Base:** Eth 0os, 3os, 10+Ed Winged Helm
+    -   **Flickering Flame Bases:** 0os, 3os, Pelts, +3 Molten Boulder +3 Volcano (w/ Either 2+ Armageddon 2+ Gust 1+ Oak Sage 1+ Carrion Vine 1+ Solar Creeper 1+ Grizzly)
+    -   +3 Fury +3 Werewolf +3 Lycanthropy
+    -   +3 Maul +3 Hunger +3 Lycanthropy
+    -   **Avatar Druid Plague Bases:** 0os, 3os, Clubs, 2+ Armageddon +2 Hurricane (w/ Either 1+ Oak Sage 1+ Carrion Vine 1+ Grizzly 1+ Gust)
+    -   +3 Armageddon or +3 Hurricane (w/ 1+ Oak Sage w/ Either 1+ Carrion Vine 1+ Grizzly 1+ Gust), (w/ 1+ Grizzly w/ Either 1+ Carrion Vine 1+ Gust), (w/ 1+ Carrion Vine 1+ Gust)
+    -   **Fire Druid Plague Bases:** 0os, 3os, Clubs, 2+ Molten Boulder 2+ Volcano (w/ Either 2+ Armageddon 1+ Oak Sage 1+ Carrion Vine 1+ Grizzly 1+ Gust)
+    -   +3 Molten Boulder or +3 Volcano (w/ 1+ Oak Sage w/ Either 1+ Carrion Vine 1+ Grizzly 2+ Armageddon 1+ Gust), (w/ 1+ Carrion Vine w/ Either 1+ Grizzly 2+ Armageddon 1+ Gust), (w/ 1+ Grizzly w/ Either 2+ Armageddon 1+ Gust), (w/ 2+ Armageddon 1+ Gust)
+    -   **Wind Druid Plague Bases:** 0os, 3os, Clubs, 2+ Twister 2+ Tornado (w/ Either 2+ Hurricane 1+ Oak Sage 1+ Carrion Vine 1+ Grizzly 1+ Gust)
+    -   +3 Twister or +3 Tornado (w/ 1+ Oak Sage w/ Either 1+ Carrion Vine 1+ Grizzly 2+ Hurricane 1+ Gust), (w/ 1+ Carrion Vine w/ Either 1+ Grizzly 2+ Hurricane 1+ Gust), (w/ 1+ Grizzly w/ Either 2+ Hurricane 1+ Gust), (w/ 2+ Hurricane 1+ Gust)
+    -   **Shock Wave Druid Bases:** 0os, 3os, Clubs, +3 Shock Wave 1+ Oak Sage (w/ Either 1+ Carrion Vine 1+ Grizzly)
+    -   +3 Shock Wave (w/ 1+ Carrion Vine 1+ Grizzly)
+    -   **Summoner Druid Bases:** 0os, 3os, Clubs, 2+ Raven 2+ Grizzly (w/ Either 1+ Oak Sage 2+ Spirit Wolf 1+ Carrion Vine 2+ Heart of Wolverine 2+ Dire Wolf 1+ Gust)
+    -   +3 Raven or +3 Grizzly (w/ 1+ Oak Sage w/ Either 2+ Spirit Wolf 1+ Carrion Vine 2+ Heart of Wolverine 2+ Dire Wolf 1+ Gust), (w/ 2+ Spirit Wolf w/ Either 1+ Carrion Vine 2+ Heart of Wolverine 2+ Dire Wolf 1+ Gust), (w/ 1+ Carrion Vine w/ Either 2+ Heart of Wolverine 2+ Dire Wolf 1+ Gust), (w/ 2+ Heart of Wolverine w/ Either 2+ Dire Wolf 1+ Gust), (w/ 2+ Dire Wolf 1+ Gust)
+    -   **Maul Druid Bases:** 0os, 3os, Clubs, +3 Maul 1+ Oak Sage (w/ Either 1+ Carrion Vine 1+ Hunger 1+ Grizzly)
+    -   +3 Maul 1+ Carrion Vine (w/ Either 1+ Hunger 1+ Grizzly)
+    -   +3 Maul (w/ 1+ Hunger 1+ Grizzly)
+    -   **Rabies Druid Bases:** 0os, 3os, Clubs, +3 Rabies 1+ Oak Sage (w/ Either 1+ Carrion Vine 1+ Grizzly)
+    -   +3 Rabies (w/ 1+ Carrion Vine 1+ Grizzly)
+    -   **Fury Druid Bases:** 0os, 3os, Clubs, +3 Fury 1+ Oak Sage (w/ Either 1+ Carrion Vine 1+ Grizzly)
+    -   +3 Fury (w/ 1+ Carrion Vine 1+ Grizzly)
+    -   **Fire Claw Druid Bases:** 0os, 3os, Clubs, +3 Fire Claw 1+ Oak Sage (w/ Either 1+ Carrion Vine 2+ Feral Rage 1+ Hunger 2+ Fury 1+ Grizzly)
+    -   +3 Fire Claw 1+ Carrion Vine (w/ Either 2+ Feral Rage 1+ Hunger 2+ Fury 1+ Grizzly)
+    -   +3 Fire Claw 2+ Feral Rage (w/ Either 1+ Hunger 2+ Fury 1+ Grizzly)
+    -   +3 Fire Claw 1+ Hunger (w/ Either 2+ Fury 1+ Grizzly)
+    -   +3 Fire Claw (w/ 2+ Fury 1+ Grizzly)
+    -   **Lld Pala Bases:** Non Eth 0os, 4os, War Scepter, Divine Scepter, +3 Blessed Hammer (w/ Either +3 Joust +3 Concentration)
+    -   +3 Concentration (w/ Either +3 Joust +3 Blessed Hammer)
+    -   +3 Joust (w/ Either +3 Concentration +3 Blessed Hammer)
+    -   Non Eth 0os, 4os, Divine Scepter, +3 Zeal (w/ Either 1+ Vigor 1+ Holy Shield 1+ Fanaticism 1+ Charge)
+    -   +3 Charge (w/ Either 1+ Vigor 1+ Holy Shield 1+ Fanaticism 1+ Zeal 1+ Might)
+    -   +3 Blessed Hammer (w/ Either 1+ Vigor 1+ Holy Shield 1+ Zeal 1+ Concentration)
+    -   Non Eth 0os, 4os, War Scepter, Divine Scepter, +3 Holy Bolt (w/ Either 1+ Vigor 1+ Holy Shield)
+    -   **Lld Sorc Bases:** Non Eth 0os, 4os, Gnarled Staff, Cedar Staff, Battle Staff, Gothic Staff, War Staff, Rune Staff, +3 Blaze (w/ Either +3 Chilling Armor +3 Shiver Armor)
+    -   **Plague Pala Bases:** 0os, 3os, Scepters, +3 Fist of the Heavens 2+ Holy Bolt
+    -   +3 Blessed Hammer 2+ Concentration
+    -   **Fury Pala Bases:** Eth 0os, 3os, Mighty Scepter, Seraph Rod, Caduceus, 2+ Fanaticism 2+ Zeal
+    -   **Hoj/Doom Pala Bases:** Non Eth 0os, 4os, 5os, Caduceus, 3+ Conviction
+    -   **Phoenix Pala Bases:** 0os, 4os, War Scepter, Divine Scepter, Caduceus, +3 Blessed Hammer 2+ Concentration
+    -   **Eternity Pala Bases:** Eth 0os, 5os, Caduceus, 2+ Fanaticism 2+ Zeal
+    -   **Cta Pala Bases:** 0os, 5os, War Scepter, Divine Scepter, Caduceus, (w/ Either +3 Holy Sword 3+ Holy Shield)
+    -   **Merc Insight/Doom/Beast Bases:** 0os, 5os, War Scepter, Divine Scepter, Caduceus, +3 Prayer
+    -   **Chaos Bases:** 0os, 3os, 15Ed, War Fist, 1+ Dragon Flight (w/ +3 Claw and Dagger Mastery +3 Weapon Block)
+    -   1+ Dragon Flight (w/ Either +3 Claw and Dagger Mastery +3 Weapon Block)
+    -   Eth 0os, 3os, War Fist, 1+ Dragon Flight, 1+ Claw and Dagger Mastery, 10+Ed
+    -   **Chest Bases:** Eth 0os, 4os, Elite Chests, 900+Def
+    -   **Dominion Bases:** 0os, 2os, Wands, +3 Fire Golem 1+ Bone Armor (w/ Either 1+ Lower Resist 1+ Revive)
+    -   +3 Fire Golem (w/ Either 1+ Blood Warp 1+ Bone Armor 1+ Lower Resist 1+ Revive)
+    -   +3 Lower Resist 1+ Bone Armor (w/ Either 1+ Revive 1+ Blood Warp)
+    -   +3 Lower Resist 1+ Revive +3 Blood Warp
+    -   +3 Blood Warp +3 Fire Golem (w/ Either 1+ Bone Armor 1+ Lower Resist 1+ Revive)
+    -   2+ Blood Warp 2+ Fire Golem (w/ Either 1+ Bone Armor 1+ Lower Resist 1+ Revive)
+    -   2+ Blood Warp 1+ Lower Resist 1+ Revive
+    -   +3 Blood Warp 1+ Lower Resist 1+ Bone Armor
+    -   +3 Blood Warp 1+ Revive 1+ Bone Armor
+    -   1+ Bone Armor 1+ Lower Resist 1+ Revive
+    -   **Leap Attack Bases:** Eth 0os, 5os, 6os, 15Ed, War Pike, Thunder Maul
+    -   Eth 0os, 2os, 3os, 4os, 5os, 6os, 15Ed, Archon Staff
+    -   **Infinity Bases:** 0os, 4os, Elder Staff, Shillelagh, Archon Staff, +3 Nova or +3 Charged Bolt or +3 Chain Lightning, (w/ Either 1+ Lightning Mastery +3 Teleport)
+    -   **Obsession Bases:** 0os, 6os, Archon Staff, +3 Blizzard or +3 Ice Bolt, (w/ Either +3 Cold Mastery 1+ Blaze)
+    -   0os, 6os, Archon Staff, +3 Meteor +3 Fire Mastery
+    -   **Cta Sorc Bases:** 0os, 5os, War Staff, Rune Staff, Archon Staff, +3 Energy Shield 1+ Shiver Armor 1+ Thunder Storm
+    -   1+ Shiver Armor 1+ Chilling Armor
+    -   +3 Energy Shield +3 Shiver Armor
+    -   **Venom Pre-Buff Bases:** 0os, 3os, Claws, +3 Venom (w/ Either +3 Burst of Speed +3 Fade +3 Blade Shield)
+    -   **Venom Blade Dance Bases:** 0os, 3os, Blade Talons, Greater Talons, Runic Talons, +3 Claw and Dagger Mastery +3 Weapon Block
+    -   **Venom Blade Sentinal Bases:** 0os, 3os, Blade Talons, Greater Talons, Runic Talons, +3 Blade Sentinel +3 Weapon Block +3 Dragon Flight
+    -   **Helmet Bases:** Eth 0os, 3os, 10+Ed, Demonhead, Bone Visage, Diadem, Spired Helm, Corona
+    -   **Chest Bases:** Eth 0os, 3os, 4os, 10+Ed, Mage Plate, Elite Chests
+    -   **Shield Bases:** Eth 0os, 4os, 10+Ed, Monarch, Aegis, Ward
+    -   **Pala Shield Bases:** Non Eth 0os, 3os, 4os, 25+All Res, Elite Pala Shields
+    -   60+Ed, Elite Pala Shields
+    -   Eth 0os, 4os, 20+All Res, Elite Pala Shields
+    -   50+Ed, Elite Pala Shields
+    -   **1 Handed Axe Bases:** Eth 0os, 3os, 4os, 5os, 6os, 10+Ed, Ettin Axe, Berserker Axe
+    -   **2 Handed Axe Bases:** Eth 0os, 4os, 5os, 6os, 10+Ed, Decapitator, Champion Axe, Glorious Axe
+    -   **1 Handed Hammer Bases:** Eth 0os, 3os, 10+Ed, Legendary Mallet
+    -   **2 Handed Hammer Bases:** Eth 0os, 5os, 6os, 10+Ed, Ogre Maul, Thunder Maul
+    -   **1 Handed Sword Bases:** Eth 0os, 4os, 5os, 10+Ed, Cryptic Sword
+    -   **2 Handed Sword Bases:** Eth 0os, 3os, 4os, 5os, 6os, 10+Ed, Balrog Blade, Colossus Sword, Colossus Blade
+    -   **Spear/Polearm/Ama Spear Bases:** Eth 0os, 4os, 5os, 6os, 10+Ed, Stygian Pike, Mancatcher, Ghost Spear, War Pike, Ogre Axe, Thresher, Cryptic Axe, Great Poleaxe, Giant Thresher
+    -   Eth 0os, 6os, 10+Ed, +3Jav, Matriarchal Spear, Matriarchal Pike
+    -   **Staff Bases:** Eth 0os, 2os, 4os, 6os, 10+Ed, Stalagmite, Archon Staff
+    -   **Scepter Bases:** Eth 0os, 3os, 10+Ed, Seraph Rod, Caduceus
+    -   **Claw Bases:** Eth 0os, 3os, 10+Ed, Suwayyah, War Fist, Scissors Suwayyah
+    -   **Gold Bases:** 35K, 2 Slot Weapons
+    -   **Cow Bases:** Wirt's Leg
+    ## Hides:
+    -   **Filter Lvl 12:** Flawless Gems
+    -   **Uniq:** lld, T0, T1, T2, +Non Highlighted
+    -   **Set:** lld, T1, T2, +Non Highlighted
+    -   **Rare:** Any Other Rare
+    -   **Mag:** Any Other Magic
+    -   **Bases:** Any Other Base

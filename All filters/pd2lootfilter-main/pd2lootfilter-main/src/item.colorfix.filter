@@ -1,0 +1,12 @@
+///// Shopping Fixes
+////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[SOCK=0 NMAG]:%NAME%%WHITE%%CONTINUE%//
+ItemDisplay[!RW SOCK>0 NMAG]:%NAME%%GRAY%%CONTINUE%//
+ItemDisplay[ETH NMAG]:%NAME%%GRAY%%CONTINUE%//
+ItemDisplay[MAG]:%NAME%%BLUE%%CONTINUE%//
+ItemDisplay[RARE]:%NAME%%YELLOW%%CONTINUE%//
+ItemDisplay[UNI]:%NAME%%GOLD%%CONTINUE%//
+ItemDisplay[SET]:%NAME%%GREEN%%CONTINUE%//
+ItemDisplay[CRAFT]:%NAME%%ORANGE%%CONTINUE%//
+ItemDisplay[RW]:%NAME%%GOLD%%CONTINUE%//
+

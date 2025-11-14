@@ -1,3 +1,53 @@
+PART 0 — RESET & VALIDATION PASS (RUN THIS FIRST)
+
+GOAL
+- You are NOT starting from scratch.
+- Assume this repo already contains a previous merged result:
+  `C:\Users\Kubik\Downloads\filter\All filters\Merged_Ultimate.filter`
+- Your job now is to:
+  1) Re-validate that `Merged_Ultimate.filter` actually contains EVERYTHING
+     from all source PD2 filters and docs.
+  2) Fix any gaps, duplicates, or readability issues.
+  3) Output an updated, fully-validated `Merged_Ultimate.filter` (same name).
+
+RULES
+
+1) ALWAYS RELOAD CURRENT MERGED FILE
+   - Before doing any other work, read the current merged file:
+     `Merged_Ultimate.filter` (and/or `MergedUltimatePD2Filter.filter`)
+   - Use the CHUNKED READING RULE (500-line chunks) to read it COMPLETELY.
+
+2) RE-RUN PREPASS ON ALL SOURCE FILES
+   - Re-run the PREPASS inventory over:
+     `C:\Users\Kubik\Downloads\filter\All filters\`
+   - Discover ALL `.filter`, `.html`, and relevant `.txt` PD2 files.
+   - For EACH discovered file, apply the GLOBAL CHUNKED-READING RULE.
+   - Do NOT assume any previous run was complete; re-scan everything.
+
+3) COMPARE SOURCES vs MERGED_ULTIMATE
+   For each source file:
+   - Determine which aliases, ItemDisplay rules, and logic:
+     a) Already exist in `Merged_Ultimate.filter`
+     b) Are missing and still need to be added
+   - If missing, integrate them now into `Merged_Ultimate.filter` in the
+     correct section, following the merge plan and section order.
+
+4) CLEAN UP & DEDUPE
+   - After all new content is merged:
+     • Scan `Merged_Ultimate.filter` for duplicate or overlapping rules.
+     • Merge or remove duplicates while preserving behavior.
+     • Make sure no item is accidentally hidden or processed twice.
+   - Simplify long item texts and names to short, readable labels while
+     keeping important tags and hints (gold, gems, {Sell}, {Craft}, etc.).
+
+5) FINAL OUTPUT
+   - Overwrite / regenerate a single, final:
+     `Merged_Ultimate.filter`
+   - Use the later sections of this file (PREPASS, BASE SETUP, VISUAL LAYER,
+     ECONOMY LAYER, FINAL PASS, CHECKLIST) as the detailed spec for how to
+     merge, clean up, and format everything.
+   - When all steps are done, print `[[DONE]]` at the end of the last block.
+
 PREPASS — INVENTORY & COMPLETENESS AUDIT
 
 SOURCE FOLDER
@@ -6,23 +56,28 @@ SOURCE FOLDER
 
 BASE FILTER
 - Use this file as the already-merged base we’re expanding:  
-  `"C:\Users\Kubik\Downloads\filter\All filters\filter for editing my current filter modified\MergedUltimatePD2Filter.filter"`
+  "C:\Users\Kubik\Downloads\filter\All filters\filter for editing my current filter modified\MergedUltimatePD2Filter.filter"
 
 TASKS
 1) INVENTORY: List every `.filter` file found under the folder (including subfolders of known repos) and group by project (Hiim, Kassahi, eqN, Feather, TalRasha, PD2, DHFilter, Kryszard, etc.). For each, list notable sections (maps, runes, runewords, LLD, shopping/gambling, socket rules, jewels/charms, staffmods, crafting, quest/uber mats).
-2) GAP MAP: For each group, mark which features are **missing** from the base `hiim.filter`.
+2) GAP MAP: For each group, mark which features are missing from the base hiim-based filter (MergedUltimatePD2Filter.filter).
 3) PLAN: Output a concise merge plan (checklist) with section order. This plan will drive Part 1–4.
 // ADDED:
 4) CRAFTING RECOMMENDATIONS: When scanning each filter, also note any rules, comments, or tags that indicate items are “recommended to craft” or “not recommended to craft” so they can be merged into the base later.
+// ADDED:
+5) GLOBAL PD2 COVERAGE: Treat every Project Diablo 2–related file in this folder (all `.filter`, `.html`, and relevant `.txt`) as potentially useful. Do not assume any PD2 file is irrelevant until it has been fully read and checked.
 
 OUTPUT
 - Emit only the audit + plan (≤200 lines). Then stop and print `[[READY_FOR_PART_1]]`.
 
+
 CHUNKED READING RULE (IMPORTANT)
 
 The tools (Read, Grep, etc.) have size limits. Whenever you work with any
-large .filter or .html file, you MUST read it in multiple chunks instead
+large `.filter`, `.html`, or `.txt` file, you MUST read it in multiple chunks instead
 of trying to read the whole file at once.
+
+// ADDED: This applies to EVERY PD2-related file discovered in PREPASS.
 
 1) For each big file, first find the total number of lines:
    Bash
@@ -51,8 +106,9 @@ of trying to read the whole file at once.
 3) For EACH chunk, you must scan for:
    - Aliases
    - ItemDisplay rules
-   - crafting / economy tags
-   - any unique logic this filter adds
+   - Crafting / economy tags
+   - Build-specific logic and staffmods
+   - Any unique logic or comments this filter adds
 
 4) Only after you have processed all chunks of a file should you treat that
    file as “fully read” and use it in the merge. Do NOT rely on a single
@@ -62,6 +118,14 @@ If the Read tool itself is used with offset/limit, apply the same idea:
 loop over the file with increasing offsets and fixed limits (for example
 limit = 250000 characters) until you have covered the full file.
 
+// ADDED – CONSUME & MARK SOURCE FILTERS
+5) For every source `.filter` file:
+   - Keep track of which rules/aliases/comments you actually copy or adapt into `Merged_Ultimate.filter`.
+   - After integrating those rules into `Merged_Ultimate.filter`, go back to the source `.filter` and EITHER:
+     • Comment them out with a clear tag like `// USED_IN_MERGE_V2.0`, OR  
+     • Remove them entirely and leave a short comment block at the top listing what was consumed.
+   - The goal is: after the merge, any remaining ACTIVE rules in the source filter represent content that was not used. This lets you verify that the file was fully scanned and which parts were actually included.
+   - Do NOT modify the base `Merged_Ultimate.filter` this way; only apply this “consume & mark” behavior to the *source* filters you are pulling from (Hiim builder files, Kassahi, eqN, etc.).
 
 
 🧱 BASE SETUP
@@ -71,29 +135,41 @@ limit = 250000 characters) until you have covered the full file.
   `C:\Users\Kubik\Downloads\filter\All filters\`
 
 🎯 OBJECTIVE
-Merge all filters in that folder into the base hiim.filter by:
-- Comparing each file and identifying anything **unique or missing** from hiim.filter.
+Merge all filters in that folder into the base hiim-based filter by:
+- Comparing each file and identifying anything unique or missing from the base.
 - Adding all those unique sections, item rules, alias definitions, crafting recommendations, and comments into the base.
-- **Do NOT delete or modify** existing hiim.filter content — only add or enhance.
+- Do NOT delete or modify existing base logic except:
+  • To remove/harden duplicate rules, or  
+  • To shorten text for readability while preserving meaning.
 
 // ADDED:
 Also incorporate external crafting information from the Project Diablo 2 crafting guide:
-- Use the uploaded file `Crafting - Project Diablo 2.html` (PD2 wiki page) as a reference for crafting recipes, item bases, and whether they are recommended or not recommended to craft.
-- Treat that page as an authoritative source for which bases and crafts should be labeled as {Recommended Craft} or {Not Recommended Craft} in the filter.
+- Use the file `Crafting - Project Diablo 2.html` (PD2 wiki page) in this repo as a reference for crafting recipes, item bases, and recommendations.
+- Treat that page as an authoritative source for which bases and crafts should be labeled as `{Recommended Craft}` or `{Not Recommended Craft}` in the filter, when such guidance is present or can be inferred consistently with the rest of the filter’s tier logic.
 
 🧩 OUTPUT REQUIREMENTS
 - Maintain clear section headers.
 - Preserve PD2 formatting and encoding (no invalid characters).
 - Output the merged result as `Merged_Ultimate.filter`, using Markdown code blocks of ≤100k tokens.
 - At the end of each chunk, add a marker like `[[CONTINUE:n]]` for the next part.
-- Begin by printing a **short Table of Contents** of major sections to be included.
+- Begin by printing a short Table of Contents of major sections to be included.
+- After the new `Merged_Ultimate.filter` is produced, perform a second validation pass using `Merged_Ultimate.filter` itself as the reference:
+  • Confirm that all features described in the plan and gap map are actually present.  
+  • Confirm that everything previously present in `MergedUltimatePD2Filter.filter` still exists (unless intentionally simplified or deduplicated).
+
 Then start emitting `Merged_Ultimate.filter (Part 1)` code immediately.
+
 
 VISUAL & CLASS ENHANCEMENT LAYER
 
 🟡 UNHIDE GOLD
 - Make all gold visible in every context (maps, towns, dungeons, etc.).
 - Use a bright, readable “golden yellow” color for text and a clear pickup sound.
+
+// ADDED – GEM VISIBILITY
+- Make all gems (chipped, normal, flawless, perfect) visible at all filter levels.
+- You may still tier their emphasis (e.g. Perfect > Flawless > others), but do not fully hide them.
+- Gems should be easy to spot and readable, especially for crafting and reroll recipes.
 
 🎨 CLASS THEMES
 - Assign unique color schemes to each class for class-specific gear, crafts, and drops:
@@ -109,11 +185,20 @@ VISUAL & CLASS ENHANCEMENT LAYER
 ⚒️ CRAFTING BASES
 - Add top-tier crafting bases per class (armor, weapons, shields, jewels, charms).
 - Show sockets, item level (if possible), runeword eligibility, and quality tier.
-- If not already in hiim.filter, import or define missing base categories.
+- If not already in the base, import or define missing base categories.
+
+// ADDED – TEXT SHORTENING / READABILITY
+- When displaying items, prioritize short, clear labels over long sentences.
+- Compress ground text to essentials:
+  • Item/base name  
+  • Key tags (e.g. `{Craft T1}`, `{Trade}`, `{RW}`, `{Larzuk 4os}`)  
+  • Very short hints instead of paragraphs (e.g. `Cube PGem` instead of full sentences).
+- Remove redundant words and repeated color codes where possible to make the screen easier to read.
 
 📦 OUTPUT
 Continue the code output of `Merged_Ultimate.filter` where you left off.
 End each code block with `[[CONTINUE:n]]`.
+
 
 ECONOMY & CRAFTING INTELLIGENCE LAYER
 
@@ -138,6 +223,13 @@ ECONOMY & CRAFTING INTELLIGENCE LAYER
   • Promotes bases and recipes the wiki marks as strong or recommended.  
   • Still shows, but visually downplays, those that are not recommended.
 
+// ADDED – SHORTER, CLEARER NAMES
+- Where names or descriptions are very long, reformat them into:
+  • A concise main label on one line  
+  • Optional extra tags on a second line  
+- Make rare/jewel/charm names easier to read by standardizing the pattern, e.g.:
+  `%COLOR%%NAME% {Life/Res} {T1}` instead of long flavor text.
+
 🧱 CRAFTING PRIORITY COLORS
 - Tier 1 (best) bases = vibrant highlight  
 - Tier 2 = moderate emphasis  
@@ -156,21 +248,36 @@ ECONOMY & CRAFTING INTELLIGENCE LAYER
 Continue output of `Merged_Ultimate.filter`, using ≤100k-token chunks.
 End each with `[[CONTINUE:n]]`.
 
+
 FINAL PASS — QUALITY & PERFORMANCE OPTIMIZATION
 
 🧹 CLEANUP
 - Remove duplicates or conflicting rules created during merging.
-- Keep hiim.filter’s original order and priority when overlap occurs.
+- Keep the base filter’s original order and priority when overlap occurs.
+
+// ADDED – DUPLICATE RULE REMOVAL (STRICT)
+- Perform a full scan of `Merged_Ultimate.filter` for duplicate or functionally equivalent rules:
+  • Same or overlapping ItemDisplay conditions? Merge them into one.
+  • Same alias definitions? Keep a single canonical alias.
+- Ensure that no item is covered by two identical rules with different texts or sounds unless this is intentional and documented.
+
+// ADDED – VALIDATE AGAINST MERGED_ULTIMATE.FILTER
+- Compare the final `Merged_Ultimate.filter` against the previous `MergedUltimatePD2Filter.filter`:
+  • Confirm that all major sections still exist.  
+  • Confirm that new sections (craft ALVL, recipes, build-specific, Larzuk, Vengeance, etc.) are present.  
+  • Confirm that duplicate-removal did NOT accidentally hide or break important rules.
 
 ⚙️ VALIDATION
 Confirm that:
 ✅ Gold is visible everywhere.  
+✅ Gems are visible everywhere (with tiered emphasis).  
 ✅ Class color themes are applied.  
 ✅ Crafting bases are clearly marked.  
 ✅ `{Sell}/{Keep}/{Trade}/{Craft}/{Salvage}` tags appear where appropriate.  
 ✅ No valuable items or drop types are hidden.
 // ADDED:
 ✅ Crafting recommendations from all filters and from `Crafting - Project Diablo 2.html` are present and correctly labeled as recommended or not recommended to craft.
+✅ All long, noisy texts are shortened into readable, compact labels.
 
 🔍 PERFORMANCE
 - Avoid redundant lines and minimize lag by merging similar rules logically.
@@ -186,11 +293,13 @@ At the end, print a short “Summary & Checklist” describing:
 📦 OUTPUT
 Emit the remaining code sections of `Merged_Ultimate.filter` until complete, marking the final block as `[[DONE]]`.
 
+
 COMPLETENESS CHECKLIST — DO NOT SKIP
 Verify all categories are present and visible:
 
 A) GLOBAL
 - Gold always visible (all contexts); stack counts show; pickup sound set
+- Gems: all tiers visible and clearly readable
 - Runes: display, tooltips, upgrade/cube notes, socket bonuses
 - Gems/Jewels/Charms: value cues, rolls, crafting notes
 - Sockets: counts on bases, RW eligibility tags
@@ -198,7 +307,7 @@ A) GLOBAL
 B) CLASSES (Paladin + all others)
 - Class color themes applied (Paladin = Holy Light)
 - Staffmods/skill trees recognized on class bases
-- **Top crafting bases per class** present and tiered (T1/T2/T3) with `{Craft}` or `{RW}` tags
+- Top crafting bases per class present and tiered (T1/T2/T3) with `{Craft}` or `{RW}` tags
 
 C) ECONOMY
 - `{Sell}/{Keep}/{Trade}/{Craft}/{Salvage}` tags appear where relevant
@@ -210,6 +319,10 @@ C) ECONOMY
   • Any `.filter` file in the source folder, and  
   • `Crafting - Project Diablo 2.html`  
   is represented in the filter with an appropriate tag or visual treatment.
+
+// ADDED – DUPLICATE & NAME CHECK
+- Confirm there are no duplicate ItemDisplay or Alias rules.
+- Confirm item names and labels are short, consistent, and easy to read.
 
 D) MAPS & BOSSES
 - Map immunities/notes; uber mats; keys; cube mats
@@ -224,3 +337,4 @@ If ANY item above is missing, append the required rules at the end in a `// MISS
 FINAL
 - Print a short table mapping: {source filter} → {sections imported}. End with `[[DONE]]`.
 - Where possible, include which sources contributed crafting recommendations (filters and crafting HTML page).
+- Also report, for each source `.filter`, whether rules were consumed and commented/removed, to prove that the file was fully processed.

@@ -3,7 +3,7 @@
 //═══════════════════════════════════════════════════════════════════════════
 // Base: HiimFilter (Preserved Structure & Ordering)
 // Enhanced: Dauracul + Kassahi + eqN + Feather + TalRasha + All Community Filters
-// Version: Ultimate Complete v3.2 - Cube Recipes Edition
+// Version: Ultimate Complete v3.3 - Complete Recipe Reference
 // Date: November 14, 2025
 //═══════════════════════════════════════════════════════════════════════════
 // Features:
@@ -29,6 +29,8 @@
 // - Fully Deduplicated (18 duplicates removed)
 // - ALL GEM TIERS VISIBLE (Chipped/Flawed/Normal/Flawless/Perfect + Upgrade Recipes)
 // - CUBE RECIPE TOOLTIPS (Keys, Larzuk Items, Uber Keys, Gem Promotion)
+// - JEWEL CRAFTING INFO (Shown on all unidentified jewels)
+// - COMPREHENSIVE CRAFTING (All 7 types: Blood/Caster/Hit/Safe/Vamp/Bounty/Brilliant)
 //═══════════════════════════════════════════════════════════════════════════
 
 //═══════════════════════════════════════════════════════════════════════════
@@ -1252,8 +1254,8 @@ ItemDisplay[gpy]: %YELLOW%PTop%MAP-62%{%YELLOW%Perfect Topaz%NL%%TAN%GC Reroll%W
 ItemDisplay[gpg QTY>1]: %GREEN%PEme x%QTY%%MAP-62%{%GREEN%Perfect Emerald%NL%%WHITE%SafC: Wp/Sh/He%WHITE% {Craft}
 ItemDisplay[gpg]: %GREEN%PEme%MAP-62%{%GREEN%Perfect Emerald%NL%%WHITE%SafC: Wp/Sh/He%WHITE% {Craft}
 
-ItemDisplay[gpu QTY>1]: %LIGHT_GRAY%PSkull x%QTY%%MAP-62%{%LIGHT_GRAY%Perfect Skull%NL%%YELLOW%Rare Reroll Recipe%WHITE% {Salv}
-ItemDisplay[gpu]: %LIGHT_GRAY%PSkull%MAP-62%{%LIGHT_GRAY%Perfect Skull%NL%%YELLOW%Rare Reroll Recipe%WHITE% {Salv}
+ItemDisplay[gpu QTY>1]: %LIGHT_GRAY%PSkull x%QTY%%MAP-62%{%LIGHT_GRAY%Perfect Skull%NL%%GRAY%VampC: ML/RepLife%WHITE% | %YELLOW%Rare Reroll%WHITE% {Salv}
+ItemDisplay[gpu]: %LIGHT_GRAY%PSkull%MAP-62%{%LIGHT_GRAY%Perfect Skull%NL%%GRAY%VampC: ML/RepLife%WHITE% | %YELLOW%Rare Reroll%WHITE% {Salv}
 
 // FLAWLESS GEMS - Show in Early Game
 ItemDisplay[glw QTY>1 CLVL<50]: %WHITE%FDia x%QTY%{%WHITE%Upgrade: 3x = Perfect Diamond%WHITE% {Salv}
@@ -1722,9 +1724,9 @@ ItemDisplay[(7s8 OR 7pa OR 7h7 OR 7vo OR 7wc) NMAG SOCK=4]: %PURPLE%◆ %NAME% 4
 // SECTION 9: SELLABLE ITEMS - VENDOR $$$ (From Kassahi enhanced)
 // ═══════════════════════════════════════════════════════════════════════════
 
-// JEWELS - Always check
-ItemDisplay[jew MAG !ID]: %BLUE%JWL %NAME% %WHITE%[15IAS/ED = $$$]
-ItemDisplay[jew RARE !ID]: %YELLOW%JWL %NAME% %WHITE%[IAS/ED/RES = $$$]
+// JEWELS - Always check (Needed for ALL Crafting)
+ItemDisplay[jew MAG !ID]: %BLUE%JWL %NAME% %WHITE%[15IAS/ED = $$$]{%BLUE%Magic Jewel%NL%%TAN%Crafting: Jewel + Mag/Rare + PGem + Rune%CL%%WHITE%7 Types: Blood/Caster/Hit/Safe/Vamp/Bounty/Bril
+ItemDisplay[jew RARE !ID]: %YELLOW%JWL %NAME% %WHITE%[IAS/ED/RES = $$$]{%YELLOW%Rare Jewel%NL%%TAN%Crafting: Jewel + Mag/Rare + PGem + Rune%CL%%WHITE%7 Types: Blood/Caster/Hit/Safe/Vamp/Bounty/Bril
 
 // RARE CIRCLETS - Big money potential (From eqN)
 ItemDisplay[(ci1 OR ci2 OR ci3) RARE !ID]: %YELLOW%★ %NAME% ★%MAP-62%%YELLOW% %WHITE%[+2/20FCR/LIFE = 20+ HR]

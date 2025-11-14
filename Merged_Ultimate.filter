@@ -3,7 +3,7 @@
 //═══════════════════════════════════════════════════════════════════════════
 // Base: HiimFilter (Preserved Structure & Ordering)
 // Enhanced: Dauracul + Kassahi + eqN + Feather + TalRasha + All Community Filters
-// Version: Ultimate Complete v3.1 - Enhanced & Deduplicated
+// Version: Ultimate Complete v3.2 - Cube Recipes Edition
 // Date: November 14, 2025
 //═══════════════════════════════════════════════════════════════════════════
 // Features:
@@ -27,6 +27,8 @@
 // - GEM CRAFTING TOOLTIPS (Recipe usage for all perfect gems)
 // - Compact Names for Better Ground Visibility
 // - Fully Deduplicated (18 duplicates removed)
+// - ALL GEM TIERS VISIBLE (Chipped/Flawed/Normal/Flawless/Perfect + Upgrade Recipes)
+// - CUBE RECIPE TOOLTIPS (Keys, Larzuk Items, Uber Keys, Gem Promotion)
 //═══════════════════════════════════════════════════════════════════════════
 
 //═══════════════════════════════════════════════════════════════════════════
@@ -1304,11 +1306,11 @@ ItemDisplay[imrn]: %MAP-4A%%GEN_GG_ITEM_LEFT% %NAME% %GEN_GG_ITEM_RIGHT%{%GREEN%
 
 // LARZUK'S PUZZLEBOX - Socket Tool
 ItemDisplay[lbox QTY>1 (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%TAN% QTY %QTY%%CONTINUE%
-ItemDisplay[lbox]: %MAP-4A%%GEN_GG_ITEM_LEFT% %NAME% %GEN_GG_ITEM_RIGHT%{%WHITE%Two-Handed Weapon = 4 max%CL%One-Handed Weapon = 2 max%CL%Helmet, Chest, Shield = 2 max%CL%%TAN%Note%WHITE%: Use it to %TAN%Socket%WHITE% an Item%WHITE% {Salv}
+ItemDisplay[lbox]: %MAP-4A%%GEN_GG_ITEM_LEFT% %NAME% %GEN_GG_ITEM_RIGHT%{%WHITE%Two-Handed Weapon = 2-4 Sockets%CL%One-Handed Weapon = 1-2 Sockets%CL%Helmet, Chest, Shield = 1-2 Sockets%CL%%TAN%Cube: lbox + Item = Socketed Item%CL%%WHITE%Droprate: ~Vex Rune%WHITE% {Salv}
 
 // LARZUK'S PUZZLEPIECE - Lesser Socket Tool
 ItemDisplay[lpp QTY>1 (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%TAN% QTY %QTY%%CONTINUE%
-ItemDisplay[lpp]: %MAP-4A%%GEN_RARE_ITEM_LEFT% %NAME% %GEN_RARE_ITEM_RIGHT%{%WHITE%Two-Handed Weapon = 4 max%CL%One-Handed Weapon = 2 max%CL%Helmet, Chest, Shield = 2 max%CL%%TAN%Note%WHITE%: Use it to %TAN%Socket%WHITE% an Item%WHITE% {Salv}
+ItemDisplay[lpp]: %MAP-4A%%GEN_RARE_ITEM_LEFT% %NAME% %GEN_RARE_ITEM_RIGHT%{%WHITE%Two-Handed Weapon = 2-4 Sockets%CL%One-Handed Weapon = 1-2 Sockets%CL%Helmet, Chest, Shield = 1-2 Sockets%CL%%RED%Cannot use with Unique/Set Items%CL%%TAN%Cube: lpp + Item = Socketed Item%WHITE% {Salv}
 
 // LILITH'S MIRROR - Unique Reroll
 ItemDisplay[llmr QTY>1 (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%TAN% QTY %QTY%%CONTINUE%
@@ -1362,13 +1364,13 @@ ItemDisplay[lucd]: %MAP-62%%BOSS_MAT_LEFT% %NAME% %BOSS_MAT_RIGHT%{%ORANGE%Lucio
 
 // UBER TRISTRAM KEYS
 ItemDisplay[pk1 QTY>1 (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%TAN% QTY %QTY%%CONTINUE%
-ItemDisplay[pk1]: %MAP-0A%%UBER_KEYS_LEFT% %NAME% %UBER_KEYS_RIGHT%{%RED%Key of Terror%CL%%WHITE%$$$: 0.25 HR%WHITE% 
+ItemDisplay[pk1]: %MAP-0A%%UBER_KEYS_LEFT% %NAME% %UBER_KEYS_RIGHT%{%RED%Key of Terror%CL%%TAN%Cube: Terror + Hate + Destruction%CL%%WHITE%= Portal to Mini-Uber%CL%$$$: 0.25 HR%WHITE%
 
 ItemDisplay[pk2 QTY>1 (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%TAN% QTY %QTY%%CONTINUE%
-ItemDisplay[pk2]: %MAP-0A%%UBER_KEYS_LEFT% %NAME% %UBER_KEYS_RIGHT%{%RED%Key of Hate%CL%%WHITE%$$$: 0.25 HR%WHITE% 
+ItemDisplay[pk2]: %MAP-0A%%UBER_KEYS_LEFT% %NAME% %UBER_KEYS_RIGHT%{%RED%Key of Hate%CL%%TAN%Cube: Terror + Hate + Destruction%CL%%WHITE%= Portal to Mini-Uber%CL%$$$: 0.25 HR%WHITE%
 
 ItemDisplay[pk3 QTY>1 (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%TAN% QTY %QTY%%CONTINUE%
-ItemDisplay[pk3]: %MAP-0A%%UBER_KEYS_LEFT% %NAME% %UBER_KEYS_RIGHT%{%RED%Key of Destruction%CL%%WHITE%$$$: 0.25 HR%WHITE% 
+ItemDisplay[pk3]: %MAP-0A%%UBER_KEYS_LEFT% %NAME% %UBER_KEYS_RIGHT%{%RED%Key of Destruction%CL%%TAN%Cube: Terror + Hate + Destruction%CL%%WHITE%= Portal to Mini-Uber%CL%$$$: 0.25 HR%WHITE%
 
 // UBER PORTAL ITEMS
 ItemDisplay[dhn QTY>1 (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%TAN% QTY %QTY%%CONTINUE%
@@ -1746,9 +1748,9 @@ ItemDisplay[(isc OR tsc) MAPID>137]:
 ItemDisplay[isc !MAPID>137 !SHOP]: %ORANGE%ID
 ItemDisplay[tsc !MAPID>137 !SHOP]: %TEAL%TP
 
-// KEYS - Useful until late game (From Dauracul)
-ItemDisplay[key CLVL<80]: %GRAY%KEY
-ItemDisplay[key CLVL>79]:
+// KEYS - Essential for Rune & Gem Promotion
+ItemDisplay[key QTY>1]: %GRAY%KEY x%QTY%{%GRAY%Key%NL%%TAN%Needed for:%WHITE%%CL%- Rune Promotion (3 Runes + Key)%CL%- Gem Promotion (3 Flawless + Key = Perfect)%CONTINUE%
+ItemDisplay[key]: %GRAY%KEY{%GRAY%Key%NL%%TAN%Needed for:%WHITE%%CL%- Rune Promotion (3 Runes + Key)%CL%- Gem Promotion (3 Flawless + Key = Perfect)%CONTINUE%
 
 
 
@@ -2492,12 +2494,59 @@ ItemDisplay[(MAPTIER=1 OR MAPTIER=2 OR MAPTIER=3 OR MAPTIER=4 OR t51 OR t52 OR t
 //-----------------------------------------------------------------------------------
 // GEMS
 //-----------------------------------------------------------------------------------
-// Hide low tier gems outside of normal or with filter strictness
-ItemDisplay[(GEM=1 OR GEM=2 OR GEM=3) (FILTLVL>2 OR DIFF>1)]:
+// ALL GEM TIERS NOW VISIBLE WITH UPGRADE RECIPES
 
 // Formatting for stacked vs unstacked with warning
 ItemDisplay[GEM>0 QTY>1 QTY<51]: %NAME% %TAN%QTY %QTY%%CONTINUE%
 ItemDisplay[gzv OR glw OR glg OR glr OR glb OR gly OR skl OR gpv OR gpw OR gpg OR gpr OR gpb OR gpy OR skz]: %NAME% %RED%UNSTACKED{%TAN%Note%WHITE%: Cube Gems to stack them}%CONTINUE%
+
+// CHIPPED GEMS - Upgrade: 3x Chipped = 1 Flawed
+ItemDisplay[gcv QTY>1 CLVL<30]: %PURPLE%CAme x%QTY%{%PURPLE%Chipped Amethyst%NL%%TAN%3x = Flawed Ame%CONTINUE%
+ItemDisplay[gcv CLVL<30]: %PURPLE%CAme{%PURPLE%Chipped Amethyst%NL%%TAN%3x = Flawed Ame%CONTINUE%
+ItemDisplay[gcw QTY>1 CLVL<30]: %WHITE%CDia x%QTY%{%WHITE%Chipped Diamond%NL%%TAN%3x = Flawed Dia%CONTINUE%
+ItemDisplay[gcw CLVL<30]: %WHITE%CDia{%WHITE%Chipped Diamond%NL%%TAN%3x = Flawed Dia%CONTINUE%
+ItemDisplay[gcg QTY>1 CLVL<30]: %GREEN%CEme x%QTY%{%GREEN%Chipped Emerald%NL%%TAN%3x = Flawed Eme%CONTINUE%
+ItemDisplay[gcg CLVL<30]: %GREEN%CEme{%GREEN%Chipped Emerald%NL%%TAN%3x = Flawed Eme%CONTINUE%
+ItemDisplay[gcr QTY>1 CLVL<30]: %RED%CRuby x%QTY%{%RED%Chipped Ruby%NL%%TAN%3x = Flawed Ruby%CONTINUE%
+ItemDisplay[gcr CLVL<30]: %RED%CRuby{%RED%Chipped Ruby%NL%%TAN%3x = Flawed Ruby%CONTINUE%
+ItemDisplay[gcb QTY>1 CLVL<30]: %BLUE%CSap x%QTY%{%BLUE%Chipped Sapphire%NL%%TAN%3x = Flawed Sap%CONTINUE%
+ItemDisplay[gcb CLVL<30]: %BLUE%CSap{%BLUE%Chipped Sapphire%NL%%TAN%3x = Flawed Sap%CONTINUE%
+ItemDisplay[gcy QTY>1 CLVL<30]: %YELLOW%CTop x%QTY%{%YELLOW%Chipped Topaz%NL%%TAN%3x = Flawed Top%CONTINUE%
+ItemDisplay[gcy CLVL<30]: %YELLOW%CTop{%YELLOW%Chipped Topaz%NL%%TAN%3x = Flawed Top%CONTINUE%
+ItemDisplay[sku QTY>1 CLVL<30]: %LIGHT_GRAY%CSkull x%QTY%{%LIGHT_GRAY%Chipped Skull%NL%%TAN%3x = Flawed Skull%CONTINUE%
+ItemDisplay[sku CLVL<30]: %LIGHT_GRAY%CSkull{%LIGHT_GRAY%Chipped Skull%NL%%TAN%3x = Flawed Skull%CONTINUE%
+
+// FLAWED GEMS - Upgrade: 3x Flawed = 1 Normal
+ItemDisplay[gfv QTY>1 CLVL<40]: %PURPLE%FlAme x%QTY%{%PURPLE%Flawed Amethyst%NL%%TAN%3x = Normal Ame%CONTINUE%
+ItemDisplay[gfv CLVL<40]: %PURPLE%FlAme{%PURPLE%Flawed Amethyst%NL%%TAN%3x = Normal Ame%CONTINUE%
+ItemDisplay[gfw QTY>1 CLVL<40]: %WHITE%FlDia x%QTY%{%WHITE%Flawed Diamond%NL%%TAN%3x = Normal Dia%CONTINUE%
+ItemDisplay[gfw CLVL<40]: %WHITE%FlDia{%WHITE%Flawed Diamond%NL%%TAN%3x = Normal Dia%CONTINUE%
+ItemDisplay[gfg QTY>1 CLVL<40]: %GREEN%FlEme x%QTY%{%GREEN%Flawed Emerald%NL%%TAN%3x = Normal Eme%CONTINUE%
+ItemDisplay[gfg CLVL<40]: %GREEN%FlEme{%GREEN%Flawed Emerald%NL%%TAN%3x = Normal Eme%CONTINUE%
+ItemDisplay[gfr QTY>1 CLVL<40]: %RED%FlRuby x%QTY%{%RED%Flawed Ruby%NL%%TAN%3x = Normal Ruby%CONTINUE%
+ItemDisplay[gfr CLVL<40]: %RED%FlRuby{%RED%Flawed Ruby%NL%%TAN%3x = Normal Ruby%CONTINUE%
+ItemDisplay[gfb QTY>1 CLVL<40]: %BLUE%FlSap x%QTY%{%BLUE%Flawed Sapphire%NL%%TAN%3x = Normal Sap%CONTINUE%
+ItemDisplay[gfb CLVL<40]: %BLUE%FlSap{%BLUE%Flawed Sapphire%NL%%TAN%3x = Normal Sap%CONTINUE%
+ItemDisplay[gfy QTY>1 CLVL<40]: %YELLOW%FlTop x%QTY%{%YELLOW%Flawed Topaz%NL%%TAN%3x = Normal Top%CONTINUE%
+ItemDisplay[gfy CLVL<40]: %YELLOW%FlTop{%YELLOW%Flawed Topaz%NL%%TAN%3x = Normal Top%CONTINUE%
+ItemDisplay[skf QTY>1 CLVL<40]: %LIGHT_GRAY%FlSkull x%QTY%{%LIGHT_GRAY%Flawed Skull%NL%%TAN%3x = Normal Skull%CONTINUE%
+ItemDisplay[skf CLVL<40]: %LIGHT_GRAY%FlSkull{%LIGHT_GRAY%Flawed Skull%NL%%TAN%3x = Normal Skull%CONTINUE%
+
+// NORMAL GEMS - Upgrade: 3x Normal = 1 Flawless
+ItemDisplay[gsv QTY>1 CLVL<50]: %PURPLE%NAme x%QTY%{%PURPLE%Normal Amethyst%NL%%TAN%3x = Flawless Ame%CONTINUE%
+ItemDisplay[gsv CLVL<50]: %PURPLE%NAme{%PURPLE%Normal Amethyst%NL%%TAN%3x = Flawless Ame%CONTINUE%
+ItemDisplay[gsw QTY>1 CLVL<50]: %WHITE%NDia x%QTY%{%WHITE%Normal Diamond%NL%%TAN%3x = Flawless Dia%CONTINUE%
+ItemDisplay[gsw CLVL<50]: %WHITE%NDia{%WHITE%Normal Diamond%NL%%TAN%3x = Flawless Dia%CONTINUE%
+ItemDisplay[gsg QTY>1 CLVL<50]: %GREEN%NEme x%QTY%{%GREEN%Normal Emerald%NL%%TAN%3x = Flawless Eme%CONTINUE%
+ItemDisplay[gsg CLVL<50]: %GREEN%NEme{%GREEN%Normal Emerald%NL%%TAN%3x = Flawless Eme%CONTINUE%
+ItemDisplay[gsr QTY>1 CLVL<50]: %RED%NRuby x%QTY%{%RED%Normal Ruby%NL%%TAN%3x = Flawless Ruby%CONTINUE%
+ItemDisplay[gsr CLVL<50]: %RED%NRuby{%RED%Normal Ruby%NL%%TAN%3x = Flawless Ruby%CONTINUE%
+ItemDisplay[gsb QTY>1 CLVL<50]: %BLUE%NSap x%QTY%{%BLUE%Normal Sapphire%NL%%TAN%3x = Flawless Sap%CONTINUE%
+ItemDisplay[gsb CLVL<50]: %BLUE%NSap{%BLUE%Normal Sapphire%NL%%TAN%3x = Flawless Sap%CONTINUE%
+ItemDisplay[gsy QTY>1 CLVL<50]: %YELLOW%NTop x%QTY%{%YELLOW%Normal Topaz%NL%%TAN%3x = Flawless Top%CONTINUE%
+ItemDisplay[gsy CLVL<50]: %YELLOW%NTop{%YELLOW%Normal Topaz%NL%%TAN%3x = Flawless Top%CONTINUE%
+ItemDisplay[sks QTY>1 CLVL<50]: %LIGHT_GRAY%NSkull x%QTY%{%LIGHT_GRAY%Normal Skull%NL%%TAN%3x = Flawless Skull%CONTINUE%
+ItemDisplay[sks CLVL<50]: %LIGHT_GRAY%NSkull{%LIGHT_GRAY%Normal Skull%NL%%TAN%3x = Flawless Skull%CONTINUE%
 
 // Flawless
 ItemDisplay[gzvs FILTLVL<8]: %DOT-70%%NAME%%TIER-2%{%TAN%Note%WHITE%: 3xFlawless + %GRAY%key %WHITE%= Perf%CL%%CL%%WHITE%Shield: +24 Def%CL%Armor/Helm: +8 to Strength%CL%Weapon: +100 to Attack Rating%CL%}

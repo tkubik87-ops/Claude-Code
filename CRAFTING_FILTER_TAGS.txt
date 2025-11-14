@@ -1,0 +1,104 @@
+CRAFTING RECOMMENDATIONS FOR FILTER TAGS
+================================================================================
+
+RECOMMENDED BASES:
+
+BLOOD CRAFTS (Ruby + Life/Steal Focus):
+- Amulets: Any Magic Amulet > +10% Run/Walk, +Life after Kill, +Life
+- Rings: Magic Ring > +Strength, Life Steal %, +Life
+- Belts: Magic Belt > Open Wounds %, Life Steal %, +Life
+- Gloves: Heavy Magic Gloves > +Strength, Open Wounds %, +Life
+- Boots: Light Plated Magic Boots > +Life, Cold Resist, Life Steal
+- Helms: Magic Helm > +Life, Life Steal %, Enhanced Defense
+- Chests: Plate Mail Magic Armor > +Life, Life Steal, Enhanced Defense
+- Shields: Spiked Magic Shield > +Life, Life Steal, Enhanced Defense
+- Weapons: Any Melee (Ruby, Sol Rune) > +ED %, Life Steal %
+
+CASTER CRAFTS (Amethyst + Mana/Cast Focus):
+- Amulets: Magic Amulet > +FCR %, Regen Mana %, +Mana
+- Rings: Magic Ring > +Energy, Mana per Kill, +Mana
+- Belts: Light Magic Belt > +FCR %, Regen Mana %, +Mana
+- Gloves: Leather Magic Gloves > Mana per Kill, +FCR %, +Mana
+- Boots: Magic Boots > +FCR %, +Mana, Regen Mana %
+- Helms: Magic Helm > +FCR %, +Mana, Regen Mana %
+- Chests: Light Plate Magic Armor > +FCR %, +Mana, Regen Mana
+- Shields: Small/Round Magic Shield > +FCR %, +Mana
+- Weapons: Rods/Staffs/Scepters/Wands > +Spells, +Mana
+
+HITPOWER CRAFTS (Sapphire + AR/Damage Focus):
+- Amulets: Magic Amulet > +AR, +FHR %, Frost Nova
+- Rings: Magic Ring > +Dexterity, +Max Damage, Frost Nova
+- Belts: Heavy Magic Belt > Mana from Damage, +Max Damage, Defense
+- Gloves: Chain Magic Gloves > +IAS %, +Max Damage, Defense
+- Boots: Chain Magic Boots > +FHR %, +Max Damage, Defense
+- Helms: Full Magic Helm > +AR, +FHR %, Frost Nova
+- Chests: Field Plate Magic Armor > +AR, +Max Damage, Defense
+- Shields: Gothic/Kite Magic Shield > +FHR %, Defense, Damage Reduction
+- Weapons: Melee > +ED %, +IAS %
+
+SAFETY CRAFTS (Emerald + Defense/Reduction Focus):
+- Amulets: Magic Amulet > +Vitality, Damage Reduction, +Life
+- Rings: Magic Ring > +Vitality, Damage Reduction, Poison Resist %
+- Belts: Sash Magic Belt > +Enhanced Defense %, Poison Resist %, Reduction
+- Gloves: Gauntlets Magic Gloves > +Enhanced Defense %, Cold Resist, Reduction
+- Boots: Greaves Magic Boots > +Enhanced Defense %, Fire Resist %, Reduction
+- Helms: Crown Magic Helm > +Enhanced Defense %, Resist %, Reduction
+- Chests: Breast Plate Magic Armor > +Enhanced Defense %, Resist, Reduction
+- Shields: Monarch/Dragon Magic Shield > +Enhanced Defense %, Resist, Reduction
+- Weapons: Polearms/Spears > +ED %, Enhanced Defense
+
+================================================================================
+
+NOT RECOMMENDED:
+
+CANNOT CRAFT:
+- Circlets (any type - unique, rare, magic)
+- Quivers (any type)
+
+POOR CHOICES:
+- ilvl 1-30 bases (only 40% for 1 affix, wasteful)
+- Ethereal bases for casters (heavy penalty outweighs benefits)
+- Low ilvl bases for endgame crafting (want ilvl 71+ for 4 affixes guaranteed)
+
+================================================================================
+
+ALVL TARGETS:
+
+AFFIX DISTRIBUTION BY ILVL:
+- ilvl 71+:     100% chance for 4 random affixes (BEST FOR CRAFTING)
+- ilvl 51-70:   80% for 3 affixes, 20% for 4 affixes (GOOD)
+- ilvl 31-50:   60% for 2 affixes, 20% each for 3-4 affixes (ACCEPTABLE)
+- ilvl 1-30:    40% for 1 affix, 20% each for 2-4 affixes (AVOID)
+
+KEY PREDETERMINED AFFIXES:
+Blood: +Life, Life Steal %, Open Wounds %
+Caster: +Mana, Faster Cast Rate %, Regenerate Mana %
+Hitpower: +Attack Rating, Faster Hit Recovery %, Max Damage
+Safety: Enhanced Defense %, Damage Reduction, Resistances %
+
+================================================================================
+
+GENERAL TIPS:
+
+KEY CHANGES IN PD2:
+- Flexible: Any magic/rare base of item type now works (was limited before)
+- Exception: Circlets and Quivers still CANNOT be crafted
+- Ethereal bases inherit ethereal property to result
+- Rare bases can now be used, not just magic
+
+CRAFTING STRATEGY:
+1. Target ilvl 71+ bases to guarantee 4 random affixes
+2. Use magic/rare base of craft-matching type
+3. Combine with: Any Jewel + Perfect Gem (Ruby/Amethyst/Sapphire/Emerald) + Rune
+4. Get predetermined affixes + up to 4 random affixes
+5. Can upgrade crafted items like rare items
+6. No inflated level requirements (fixed in PD2)
+
+ADVANTAGES:
+- Predictable predetermined affixes
+- Flexible base selection (any of type)
+- Upgradeable like rares
+- Good for min-maxing builds
+- Better than base rare drops when rolled well
+
+================================================================================

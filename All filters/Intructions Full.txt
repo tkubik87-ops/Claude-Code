@@ -58,6 +58,85 @@ BASE FILTER
 - Use this file as the already-merged base we’re expanding:  
   "C:\Users\Kubik\Downloads\filter\All filters\filter for editing my current filter modified\MergedUltimatePD2Filter.filter"
 
+====================================================================
+GLOBAL SCOPE: PROJECT DIABLO 2 – INCLUDE EVERYTHING
+====================================================================
+
+SCOPE OF WORK
+
+This project is NOT a small merge. You are building the most complete,
+all-in-one Project Diablo 2 knowledge/filter file possible.
+
+You MUST use EVERY relevant source file related to Project Diablo 2 in
+this repository, including but not limited to:
+
+- All *.filter files in any subfolder (Hiim, Kassahi, eqN, Feather,
+  TalRasha, Dauracul, Kryszard, pd2filter, pd2lootfilter, DHFilter, etc.)
+- All PD2 documentation HTML files (Item Filtering, Crafting, etc.)
+- Any PD2-related *.txt data files or notes inside "All filters" and
+  its subdirectories.
+
+If a file is about Project Diablo 2, you MUST assume it is relevant
+and process it completely.
+
+====================================================================
+GLOBAL CHUNKED-READING RULE – APPLIES TO EVERY PD2 FILE
+====================================================================
+
+Because the tools (Read, Grep, etc.) have strict size limits, you MUST
+NEVER rely on a single Read of a large file. A single Read will ALWAYS
+miss content.
+
+For EVERY PD2-related file discovered in the PREPASS inventory:
+
+1) Determine total line count  
+   Bash:
+   wc -l "<path-to-file>"
+
+2) Read the ENTIRE file in fixed-size chunks (e.g. 500 lines at a time)
+   until the final line is processed. Example:
+
+   Bash
+   sed -n '1,500p' "<path>"
+   sed -n '501,1000p' "<path>"
+   sed -n '1001,1500p' "<path>"
+   ...continue increasing ranges until you reach the end.
+
+   (Alternative: tail -n +<start> "<path>" | head -n 500)
+
+3) For EACH chunk of EVERY file, extract ALL useful PD2 information:
+   - Aliases
+   - ItemDisplay rules
+   - Crafting tags and recipes
+   - Economy tags ({Sell}/{Trade}/{Keep}/{Craft}/{Salvage})
+   - Class-specific logic and staffmods
+   - Runeword and socket logic (including Larzuk outcomes)
+   - Map/uber/quest/LLD rules
+   - Any comments, hints, or flavor text that add information
+
+4) Only after EVERY chunk has been processed may you treat that file as
+   “fully read.” Partial reads are NOT allowed.
+
+5) If using a Read tool with offset/limit, apply the same protocol:
+   loop through the whole file with increasing offsets until the end.
+
+====================================================================
+PREPASS REQUIREMENT – APPLY TO ALL FILES
+====================================================================
+
+During the PREPASS inventory step:
+
+- Discover EVERY PD2-related file under:
+    C:\Users\Kubik\Downloads\filter\All filters\
+
+- For EACH discovered file:
+    → Apply the GLOBAL CHUNKED-READING RULE above.
+    → Do NOT skip, ignore, or partially read any file.
+
+The gap map, merge plan, and final Merged_Ultimate.filter MUST be based
+on 100% of the content from 100% of the PD2 files in this directory.
+Nothing may be left unscanned.
+
 TASKS
 1) INVENTORY: List every `.filter` file found under the folder (including subfolders of known repos) and group by project (Hiim, Kassahi, eqN, Feather, TalRasha, PD2, DHFilter, Kryszard, etc.). For each, list notable sections (maps, runes, runewords, LLD, shopping/gambling, socket rules, jewels/charms, staffmods, crafting, quest/uber mats).
 2) GAP MAP: For each group, mark which features are missing from the base hiim-based filter (MergedUltimatePD2Filter.filter).

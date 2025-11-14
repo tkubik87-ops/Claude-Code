@@ -1,1 +1,4 @@
 *.backup
+*.backup_*
+*.pre-dedup
+*_before_*
